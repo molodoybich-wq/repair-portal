@@ -557,6 +557,10 @@ export default function RepairPortal() {
   const [quickNote, setQuickNote] = useState('');
   const [copiedText, setCopiedText] = useState('');
   const [assistantMode, setAssistantMode] = useState('newbie');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [loginValue, setLoginValue] = useState('');
+  const [passwordValue, setPasswordValue] = useState('');
+  const [loginError, setLoginError] = useState('');
 
   const filteredModels = useMemo(() => models[brandTab].filter((model) => model.toLowerCase().includes(search.toLowerCase())), [brandTab, search]);
 
@@ -715,6 +719,68 @@ export default function RepairPortal() {
               </Card>
             );
           })}
+        </div>
+      </div>
+    );
+  }
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (loginValue === 'service' && passwordValue === 'singa') {
+      setIsAuthenticated(true);
+      setLoginError('');
+      return;
+    }
+    setLoginError('Неверный логин или пароль');
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-slate-950 text-white">
+        <div className="mx-auto flex min-h-screen max-w-7xl items-center justify-center px-4 py-10">
+          <div className="w-full max-w-md rounded-3xl border border-slate-800 bg-slate-900/95 p-6 shadow-2xl">
+            <div className="inline-flex rounded-full border border-cyan-800/50 bg-cyan-950/40 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
+              Внутренний доступ
+            </div>
+            <h1 className="mt-4 text-3xl font-black tracking-tight">Вход в портал</h1>
+            <p className="mt-3 text-sm leading-6 text-slate-400">
+              Для просмотра цен, скриптов и внутренней информации введи логин и пароль.
+            </p>
+            <form onSubmit={handleLogin} className="mt-6 space-y-4">
+              <div>
+                <label className="mb-2 block text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Логин</label>
+                <input
+                  type="text"
+                  value={loginValue}
+                  onChange={(e) => setLoginValue(e.target.value)}
+                  placeholder="Введите логин"
+                  autoComplete="username"
+                  className="w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white outline-none focus:border-cyan-500"
+                />
+              </div>
+              <div>
+                <label className="mb-2 block text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Пароль</label>
+                <input
+                  type="password"
+                  value={passwordValue}
+                  onChange={(e) => setPasswordValue(e.target.value)}
+                  placeholder="Введите пароль"
+                  autoComplete="current-password"
+                  className="w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white outline-none focus:border-cyan-500"
+                />
+              </div>
+              {loginError ? <div className="rounded-2xl border border-rose-900/40 bg-rose-950/20 px-4 py-3 text-sm text-rose-300">{loginError}</div> : null}
+              <button
+                type="submit"
+                className="w-full rounded-2xl bg-cyan-500 px-4 py-3 text-sm font-bold text-black transition hover:bg-cyan-400"
+              >
+                Войти
+              </button>
+            </form>
+            <div className="mt-5 rounded-2xl border border-slate-800 bg-slate-950/80 p-4 text-xs leading-6 text-slate-500">
+              Доступ закрыт для внешних пользователей.
+            </div>
+          </div>
         </div>
       </div>
     );
