@@ -669,12 +669,12 @@ export default function RepairPortal() {
           ) : null}
         </Card>
 
-        <div className="grid gap-4 lg:grid-cols-2 2xl:grid-cols-3">
+        <div className="grid gap-4 2xl:grid-cols-3">
           {tiers.map((tier) => {
             const meta = qualityMeta[tier];
             const pricing = buildPricing(model, repair.key, tier);
             return (
-              <Card key={tier}>
+              <Card key={tier} className="min-w-0">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div>
                     <div className="text-sm font-bold">{meta.label}</div>
@@ -689,18 +689,18 @@ export default function RepairPortal() {
 
                 {pricing.mode === 'ready' ? (
                   <>
-                    <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                    <div className="mt-4 grid grid-cols-1 gap-3 xl:grid-cols-3">
                       <div className="rounded-2xl bg-slate-950 p-3">
                         <div className="text-[11px] uppercase tracking-[0.12em] text-slate-500">Закупка</div>
-                        <div className="mt-1 text-lg font-black">{pricing.supplierCost || '—'} ₽</div>
+                        <div className="mt-1 whitespace-nowrap text-lg font-black">{pricing.supplierCost || '—'} ₽</div>
                       </div>
                       <div className="rounded-2xl bg-slate-950 p-3">
                         <div className="text-[11px] uppercase tracking-[0.12em] text-slate-500">Маржа</div>
-                        <div className="mt-1 text-lg font-black">{pricing.margin || '—'} ₽</div>
+                        <div className="mt-1 whitespace-nowrap text-lg font-black">{pricing.margin || '—'} ₽</div>
                       </div>
                       <div className="rounded-2xl bg-slate-950 p-3">
                         <div className="text-[11px] uppercase tracking-[0.12em] text-slate-500">Розница</div>
-                        <div className="mt-1 text-lg font-black text-emerald-300">{pricing.retailPrice || '—'} ₽</div>
+                        <div className="mt-1 whitespace-nowrap text-lg font-black text-emerald-300">{pricing.retailPrice || '—'} ₽</div>
                       </div>
                     </div>
                     <div className="mt-4 text-sm leading-6 text-slate-300">{pricing.note}</div>
