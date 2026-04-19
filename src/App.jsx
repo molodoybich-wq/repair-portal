@@ -669,7 +669,7 @@ export default function RepairPortal() {
           ) : null}
         </Card>
 
-        <div className="grid gap-4 2xl:grid-cols-3">
+        <div className="grid gap-4 xl:grid-cols-2">
           {tiers.map((tier) => {
             const meta = qualityMeta[tier];
             const pricing = buildPricing(model, repair.key, tier);
@@ -689,7 +689,7 @@ export default function RepairPortal() {
 
                 {pricing.mode === 'ready' ? (
                   <>
-                    <div className="mt-4 grid grid-cols-1 gap-3 xl:grid-cols-3">
+                    <div className="mt-4 grid grid-cols-1 gap-3">
                       <div className="rounded-2xl bg-slate-950 p-3">
                         <div className="text-[11px] uppercase tracking-[0.12em] text-slate-500">Закупка</div>
                         <div className="mt-1 whitespace-nowrap text-lg font-black">{pricing.supplierCost || '—'} ₽</div>
@@ -964,7 +964,7 @@ export default function RepairPortal() {
                 )}
 
                 {selectedRepair && selectedModel && (
-                  <div className="mt-6 grid gap-6 xl:grid-cols-[1.2fr_0.8fr]">
+                  <div className="mt-6 grid gap-6 2xl:grid-cols-[1.2fr_0.8fr]">
                     <QuoteBuilder model={selectedModel} repair={selectedRepair} />
                     <div className="space-y-6">
                       <Card>
