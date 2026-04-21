@@ -252,6 +252,406 @@ const iphoneBackRetailOverride = {
   'iPhone 11': 4000,
 };
 
+const androidBackParts = [];
+
+const fullPartsCatalog = [{"model":"iPad Air 10.2 (2019/2020)+кнопка HOME","title":"Тачскрин для iPad Air 10.2 (2019/2020)+кнопка HOME (белый)","type":"display","quality":"standard","price":119.0,"source":"file"},{"model":"iPad Air 10.2 (2019/2020)+кнопка HOME","title":"Тачскрин для iPad Air 10.2 (2019/2020)+кнопка HOME (черный)","type":"display","quality":"standard","price":119.0,"source":"file"},{"model":"iPad Air+кнопка HOME","title":"Тачскрин для iPad Air+кнопка HOME (белый)","type":"display","quality":"standard","price":119.0,"source":"file"},{"model":"iPad Mini (2019)+кнопка (HOME) белый","title":"Тачскрин для iPad Mini (2019)+кнопка (HOME) белый","type":"display","quality":"standard","price":49.0,"source":"file"},{"model":"iPad Mini (2019)+кнопка (HOME) черный","title":"Тачскрин для iPad Mini (2019)+кнопка (HOME) черный","type":"display","quality":"standard","price":49.0,"source":"file"},{"model":"iPad Mini 5 7.9 (2019) (A2133/A2124/A2126/A2125)","title":"Тачскрин для iPad Mini 5 7.9 (2019) (A2133/A2124/A2126/A2125) + кнопка Home (белый)","type":"display","quality":"standard","price":279.0,"source":"file"},{"model":"iPad Mini 5 7.9 (2019) (A2133/A2124/A2126/A2125)","title":"Тачскрин для iPad Mini 5 7.9 (2019) (A2133/A2124/A2126/A2125) + кнопка Home (черный)","type":"display","quality":"standard","price":279.0,"source":"file"},{"model":"iPad Mini 5 7.9 (2019) (белый)","title":"Тачскрин для iPad Mini 5 7.9 (2019) (белый)","type":"display","quality":"standard","price":199.0,"source":"file"},{"model":"iPad Mini 5 7.9 (2019) (черный)","title":"Тачскрин для iPad Mini 5 7.9 (2019) (черный)","type":"display","quality":"standard","price":199.0,"source":"file"},{"model":"iPad Mini 7.9 2/3 (A1489/A1490/A1491/A1599/A1600)","title":"Тачскрин для iPad Mini 7.9 2/3 (A1489/A1490/A1491/A1599/A1600) (белый)","type":"display","quality":"standard","price":100.0,"source":"file"},{"model":"iPad Mini 7.9 2/3 (A1489/A1490/A1491/A1599/A1600)","title":"Тачскрин для iPad Mini 7.9 2/3 (A1489/A1490/A1491/A1599/A1600) (черный)","type":"display","quality":"standard","price":99.0,"source":"file"},{"model":"iPad Mini","title":"Тачскрин для iPad Mini (белый)","type":"display","quality":"standard","price":89.0,"source":"file"},{"model":"iPad Mini","title":"Тачскрин для iPad Mini (черный)","type":"display","quality":"standard","price":89.0,"source":"file"},{"model":"iPad Pro 10.5 (2017) A1701/A1709/A1852 + микросхема сенсора","title":"Тачскрин для iPad Pro 10.5 (2017) A1701/A1709/A1852 + микросхема сенсора (черный)","type":"display","quality":"standard","price":559.0,"source":"file"},{"model":"iPad Pro 12.9 3th (2018) (белый)","title":"Тачскрин для iPad Pro 12.9 3th (2018) (белый)","type":"display","quality":"standard","price":279.0,"source":"file"},{"model":"iPad Pro 12.9 3th (2018) (черный)","title":"Тачскрин для iPad Pro 12.9 3th (2018) (черный)","type":"display","quality":"standard","price":279.0,"source":"file"},{"model":"iPad Pro 12.9 5th (2021) A2378/A2461/A2379/A2462 (черный)","title":"Тачскрин для iPad Pro 12.9 5th (2021) A2378/A2461/A2379/A2462 (черный)","type":"display","quality":"standard","price":559.0,"source":"file"},{"model":"iPad Pro 9.7 1th (2016) (A1673/A1674/A1675) (белый)","title":"Тачскрин для iPad Pro 9.7 1th (2016) (A1673/A1674/A1675) (белый)","type":"display","quality":"standard","price":189.0,"source":"file"},{"model":"iPad Pro 9.7 1th (2016) (A1673/A1674/A1675) (черный)","title":"Тачскрин для iPad Pro 9.7 1th (2016) (A1673/A1674/A1675) (черный)","type":"display","quality":"standard","price":189.0,"source":"file"},{"model":"iPad Air 1/A1474/A1475/A1476 (LM) Original +тачскрин (белый)","title":"Дисплей для iPad Air 1/A1474/A1475/A1476 (LM) Original +тачскрин (белый)","type":"display","quality":"standard","price":1779.0,"source":"file"},{"model":"iPad Air 1/A1474/A1475/A1476 (LM) Original +тачскрин (черный)","title":"Дисплей для iPad Air 1/A1474/A1475/A1476 (LM) Original +тачскрин (черный)","type":"display","quality":"standard","price":1779.0,"source":"file"},{"model":"iPad Air 2 A1566/A1567 (LM)+тачскрин (белый)","title":"Дисплей для iPad Air 2 A1566/A1567 (LM)+тачскрин (белый)","type":"display","quality":"standard","price":1639.0,"source":"file"},{"model":"iPad Air 2 A1566/A1567 (LM)+тачскрин (черный)","title":"Дисплей для iPad Air 2 A1566/A1567 (LM)+тачскрин (черный)","type":"display","quality":"standard","price":1639.0,"source":"file"},{"model":"iPad Air 3 10.5 (2019) A2152/A2123/A2153/A2154 (LM)+тачскрин (белый)","title":"Дисплей для iPad Air 3 10.5 (2019) A2152/A2123/A2153/A2154 (LM)+тачскрин (белый)","type":"display","quality":"standard","price":2469.0,"source":"file"},{"model":"iPad Air 3 10.5 (2019) A2152/A2123/A2153/A2154 (LM)+тачскрин (черный)","title":"Дисплей для iPad Air 3 10.5 (2019) A2152/A2123/A2153/A2154 (LM)+тачскрин (черный)","type":"display","quality":"standard","price":2469.0,"source":"file"},{"model":"iPad Air 4 10.9 2020/A2316/A2324/A2325/A2072 Original + тачскрин (черный)","title":"Дисплей для iPad Air 4 10.9 2020/A2316/A2324/A2325/A2072 Original + тачскрин (черный)","type":"display","quality":"standard","price":4379.0,"source":"file"},{"model":"iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (серый)","title":"Дисплей для iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (серый)","type":"display","quality":"standard","price":4389.0,"source":"file"},{"model":"iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (синий)","title":"Дисплей для iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (синий)","type":"display","quality":"standard","price":4389.0,"source":"file"},{"model":"iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (фиолетовый)","title":"Дисплей для iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (фиолетовый)","type":"display","quality":"standard","price":4389.0,"source":"file"},{"model":"iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (черный)","title":"Дисплей для iPad Air 5 10.9 2022/A2588/A2589/A2591 Original + тачскрин (черный)","type":"display","quality":"standard","price":4389.0,"source":"file"},{"model":"iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин (белый)","title":"Дисплей для iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин (белый)","type":"display","quality":"standard","price":2179.0,"source":"file"},{"model":"iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин (черный)","title":"Дисплей для iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин (черный)","type":"display","quality":"standard","price":2179.0,"source":"file"},{"model":"iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин + IC chip (белый)","title":"Дисплей для iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин + IC chip (белый)","type":"display","quality":"standard","price":3179.0,"source":"file"},{"model":"iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин + IC chip (черный)","title":"Дисплей для iPad Pro 10.5 A1701/A1709/A1852 (LM) + тачскрин + IC chip (черный)","type":"display","quality":"standard","price":3179.0,"source":"file"},{"model":"iPad Pro 11 1/2th (2018/2020) A1934/A1979/A1980/A2013/A2068/A2228/A2230 Original + тачскрин (серый)","title":"Дисплей для iPad Pro 11 1/2th (2018/2020) A1934/A1979/A1980/A2013/A2068/A2228/A2230 Original + тачскрин (серый)","type":"display","quality":"standard","price":4869.0,"source":"file"},{"model":"iPad Pro 11 3th (2021) A2377/A2459/A2301/A2460 + touch Original (черный)","title":"Дисплей для iPad Pro 11 3th (2021) A2377/A2459/A2301/A2460 + touch Original (черный)","type":"display","quality":"standard","price":4799.0,"source":"file"},{"model":"iPad Pro 11 4th (2022) A2435/A2761/A2762/A2759 Original + тачскрин (черный)","title":"Дисплей для iPad Pro 11 4th (2022) A2435/A2761/A2762/A2759 Original + тачскрин (черный)","type":"display","quality":"standard","price":4799.0,"source":"file"},{"model":"iPad Pro 12.9 3/4th (2018/2020) A1876/A2014/A1895/A1983/A2229/A2069/A2232/A2233 +тачскрин Original (черный)","title":"Дисплей для iPad Pro 12.9 3/4th (2018/2020) A1876/A2014/A1895/A1983/A2229/A2069/A2232/A2233 +тачскрин Original (черный)","type":"display","quality":"standard","price":7819.0,"source":"file"},{"model":"iPad Pro 12.9 5th (2021) A2378/A2461/A2379/A2462 (LM) +тачскрин Original (черный)","title":"Дисплей для iPad Pro 12.9 5th (2021) A2378/A2461/A2379/A2462 (LM) +тачскрин Original (черный)","type":"display","quality":"standard","price":12889.0,"source":"file"},{"model":"iPad Pro 12.9 6th (2022) A2436/A2764/A2437/A2766 (LM) +тачскрин Original (черный)","title":"Дисплей для iPad Pro 12.9 6th (2022) A2436/A2764/A2437/A2766 (LM) +тачскрин Original (черный)","type":"display","quality":"standard","price":11999.0,"source":"file"},{"model":"iPad Pro 9.7 A1673/A1674/A1675 (LM) +тачскрин (белый)","title":"Дисплей для iPad Pro 9.7 A1673/A1674/A1675 (LM) +тачскрин (белый)","type":"display","quality":"standard","price":1479.0,"source":"file"},{"model":"iPad Pro 9.7 A1673/A1674/A1675 (LM) +тачскрин (черный)","title":"Дисплей для iPad Pro 9.7 A1673/A1674/A1675 (LM) +тачскрин (черный)","type":"display","quality":"standard","price":1479.0,"source":"file"},{"model":"A400CG (ZenFone 4)","title":"Задняя крышка Asus A400CG (ZenFone 4) белая","type":"android-back","quality":"standard","price":25.0,"source":"file"},{"model":"A400CG (ZenFone 4)","title":"Задняя крышка Asus A400CG (ZenFone 4) желтый","type":"android-back","quality":"standard","price":25.0,"source":"file"},{"model":"A400CG (ZenFone 4)","title":"Задняя крышка Asus A400CG (ZenFone 4) красный","type":"android-back","quality":"standard","price":25.0,"source":"file"},{"model":"A400CG (ZenFone 4)","title":"Задняя крышка Asus A400CG (ZenFone 4) синий","type":"android-back","quality":"standard","price":25.0,"source":"file"},{"model":"A400CG (ZenFone 4)","title":"Задняя крышка Asus A400CG (ZenFone 4) черный","type":"android-back","quality":"standard","price":25.0,"source":"file"},{"model":"A500CG (ZenFone 5)","title":"Задняя крышка Asus A500CG (ZenFone 5) белая","type":"android-back","quality":"standard","price":30.0,"source":"file"},{"model":"A500CG (ZenFone 5)","title":"Задняя крышка Asus A500CG (ZenFone 5) желтая","type":"android-back","quality":"standard","price":30.0,"source":"file"},{"model":"A500CG (ZenFone 5)","title":"Задняя крышка Asus A500CG (ZenFone 5) красная","type":"android-back","quality":"standard","price":30.0,"source":"file"},{"model":"A500CG (ZenFone 5)","title":"Задняя крышка Asus A500CG (ZenFone 5) синяя","type":"android-back","quality":"standard","price":30.0,"source":"file"},{"model":"A500CG (ZenFone 5)","title":"Задняя крышка Asus A500CG (ZenFone 5) черная","type":"android-back","quality":"standard","price":30.0,"source":"file"},{"model":"A501CG (ZenFone 5 LTE)","title":"Задняя крышка Asus A501CG (ZenFone 5 LTE) белая","type":"android-back","quality":"standard","price":30.0,"source":"file"},{"model":"A600CG (ZenFone 6)","title":"Задняя крышка Asus A600CG (ZenFone 6) белая","type":"android-back","quality":"standard","price":35.0,"source":"file"},{"model":"A600CG (ZenFone 6)","title":"Задняя крышка Asus A600CG (ZenFone 6) желтая","type":"android-back","quality":"standard","price":35.0,"source":"file"},{"model":"A600CG (ZenFone 6)","title":"Задняя крышка Asus A600CG (ZenFone 6) красная","type":"android-back","quality":"standard","price":35.0,"source":"file"},{"model":"A600CG (ZenFone 6)","title":"Задняя крышка Asus A600CG (ZenFone 6) серая","type":"android-back","quality":"standard","price":35.0,"source":"file"},{"model":"A600CG (ZenFone 6)","title":"Задняя крышка Asus A600CG (ZenFone 6) черная","type":"android-back","quality":"standard","price":35.0,"source":"file"},{"model":"One X9 белый","title":"Дисплей для HTC One X9 белый","type":"display","quality":"standard","price":465.0,"source":"file"},{"model":"One X9 черный","title":"Дисплей для HTC One X9 черный","type":"display","quality":"standard","price":465.0,"source":"file"},{"model":"Xiaomi Redmi 8A черный","title":"Дисплей для Xiaomi Redmi 8A черный","type":"display","quality":"standard","price":520.0,"source":"file"},{"model":"Asus A600CG (ZenFone 6)","title":"Дисплейный модуль Asus A600CG (ZenFone 6) черный Original PRC","type":"display","quality":"standard","price":189.0,"source":"file"},{"model":"Asus FE170CG (Fonepad 7)","title":"Дисплейный модуль Asus FE170CG (Fonepad 7) черный Original PRC","type":"display","quality":"standard","price":225.0,"source":"file"},{"model":"Asus ME302KL (MemoPad FHD 10)","title":"Дисплейный модуль Asus ME302KL (MemoPad FHD 10) белый Original PRC","type":"display","quality":"standard","price":349.0,"source":"file"},{"model":"Asus Padfone Mini 4.3 черный Original PRC","title":"Дисплейный модуль Asus Padfone Mini 4.3 черный Original PRC","type":"display","quality":"standard","price":499.0,"source":"file"},{"model":"Asus ZenFone 2 Laser ZE550KL 5.5 черный Original PRC","title":"Дисплейный модуль Asus ZenFone 2 Laser ZE550KL 5.5 черный Original PRC","type":"display","quality":"standard","price":239.0,"source":"file"},{"model":"Asus ZenFone 2 Laser ZE601KL 6.0 черный Original PRC","title":"Дисплейный модуль Asus ZenFone 2 Laser ZE601KL 6.0 черный Original PRC","type":"display","quality":"standard","price":559.0,"source":"file"},{"model":"Asus ZenFone 4 Max (ZC554KL) черный","title":"Дисплейный модуль Asus ZenFone 4 Max (ZC554KL) черный","type":"display","quality":"standard","price":599.0,"source":"file"},{"model":"Asus ZenFone 4 Max ZC520KL золотой","title":"Дисплейный модуль Asus ZenFone 4 Max ZC520KL золотой","type":"display","quality":"standard","price":599.0,"source":"file"},{"model":"Asus ZenFone 4 Max ZC520KL черный","title":"Дисплейный модуль Asus ZenFone 4 Max ZC520KL черный","type":"display","quality":"standard","price":599.0,"source":"file"},{"model":"Asus ZenFone 5 Lite (ZC600KL) черный Original PRC","title":"Дисплейный модуль Asus ZenFone 5 Lite (ZC600KL) черный Original PRC","type":"display","quality":"standard","price":749.0,"source":"file"},{"model":"Asus ZenFone Go (ZB452KG) черный","title":"Дисплейный модуль Asus ZenFone Go (ZB452KG) черный","type":"display","quality":"standard","price":270.0,"source":"file"},{"model":"Asus ZenFone Max (ZC550KL) черный Original PRC","title":"Дисплейный модуль Asus ZenFone Max (ZC550KL) черный Original PRC","type":"display","quality":"standard","price":529.0,"source":"file"},{"model":"Asus ZenFone Max (ZC550KL) белый Original PRC","title":"Дисплейный модуль Asus ZenFone Max (ZC550KL) белый Original PRC","type":"display","quality":"standard","price":669.0,"source":"file"},{"model":"Asus ZenFone Max (ZC550KL) золотой Original PRC","title":"Дисплейный модуль Asus ZenFone Max (ZC550KL) золотой Original PRC","type":"display","quality":"standard","price":639.0,"source":"file"},{"model":"Asus ZenFone Max M1 (ZB556KL) черный","title":"Дисплейный модуль Asus ZenFone Max M1 (ZB556KL) черный","type":"display","quality":"standard","price":499.0,"source":"file"},{"model":"Asus ZenFone Max M2 (ZB633KL) черный Original PRC","title":"Дисплейный модуль Asus ZenFone Max M2 (ZB633KL) черный Original PRC","type":"display","quality":"standard","price":599.0,"source":"file"},{"model":"Asus ZenFone Max Plus M1 (ZB570TL) черный Original PRC","title":"Дисплейный модуль Asus ZenFone Max Plus M1 (ZB570TL) черный Original PRC","type":"display","quality":"standard","price":449.0,"source":"file"},{"model":"Asus ZenFone Max Pro M1 (ZB602KL) черный Original PRC","title":"Дисплейный модуль Asus ZenFone Max Pro M1 (ZB602KL) черный Original PRC","type":"display","quality":"standard","price":539.0,"source":"file"},{"model":"Asus ZenFone Max Pro M2 (ZB631KL) черный Original PRC","title":"Дисплейный модуль Asus ZenFone Max Pro M2 (ZB631KL) черный Original PRC","type":"display","quality":"standard","price":879.0,"source":"file"},{"model":"Asus ZenFone Selfie (ZD551KL) золотой","title":"Дисплейный модуль Asus ZenFone Selfie (ZD551KL) золотой","type":"display","quality":"standard","price":519.0,"source":"file"},{"model":"Asus ZenFone Selfie (ZD551KL) черный","title":"Дисплейный модуль Asus ZenFone Selfie (ZD551KL) черный","type":"display","quality":"standard","price":519.0,"source":"file"},{"model":"iPhone 11 Pro Max (3969 mAh) DEJI","title":"АКБ для iPhone 11 Pro Max (3969 mAh) DEJI","type":"battery","quality":"deji","price":740.0,"source":"file"},{"model":"iPhone 15 (3349 mAh) DEJI","title":"АКБ для iPhone 15 (3349 mAh) DEJI","type":"battery","quality":"deji","price":810.0,"source":"file"},{"model":"iPhone 15 Pro (3274 mAh) DEJI","title":"АКБ для iPhone 15 Pro (3274 mAh) DEJI","type":"battery","quality":"deji","price":970.0,"source":"file"},{"model":"iPhone 15 Pro Max (4422 mAh) DEJI","title":"АКБ для iPhone 15 Pro Max (4422 mAh) DEJI","type":"battery","quality":"deji","price":1100.0,"source":"file"},{"model":"iPhone 12 Mini (2227 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 12 Mini (2227 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":2780.0,"source":"file"},{"model":"iPhone 12 mini (2227 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 12 mini (2227 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":1690.0,"source":"file"},{"model":"iPhone 12 Pro Max (3687 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 12 Pro Max (3687 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3560.0,"source":"file"},{"model":"iPhone 12 Pro Max (3687 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 12 Pro Max (3687 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":1810.0,"source":"file"},{"model":"iPhone 12/12 Pro (2815 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 12/12 Pro (2815 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":2780.0,"source":"file"},{"model":"iPhone 12/12 Pro (2815 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 12/12 Pro (2815 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":1690.0,"source":"file"},{"model":"iPhone 13 (3227 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 13 (3227 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3230.0,"source":"file"},{"model":"iPhone 13 (3227 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 13 (3227 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":1690.0,"source":"file"},{"model":"iPhone 13 Mini (2520 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 13 Mini (2520 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":2960.0,"source":"file"},{"model":"iPhone 13 Pro (3095 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 13 Pro (3095 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3630.0,"source":"file"},{"model":"iPhone 13 Pro (3095 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 13 Pro (3095 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":1810.0,"source":"file"},{"model":"iPhone 13 Pro Max (4352 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 13 Pro Max (4352 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3780.0,"source":"file"},{"model":"iPhone 13 Pro Max (4352 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 13 Pro Max (4352 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":1930.0,"source":"file"},{"model":"iPhone 14 (3279 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 14 (3279 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3380.0,"source":"file"},{"model":"iPhone 14 (3279 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 14 (3279 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":1930.0,"source":"file"},{"model":"iPhone 14 Pro (3200 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 14 Pro (3200 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3630.0,"source":"file"},{"model":"iPhone 14 Pro (3200 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 14 Pro (3200 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":2050.0,"source":"file"},{"model":"iPhone 14 Pro Max (4323 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 14 Pro Max (4323 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3890.0,"source":"file"},{"model":"iPhone 14 Pro Max (4323 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 14 Pro Max (4323 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":2170.0,"source":"file"},{"model":"iPhone 15 (3349 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 15 (3349 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3670.0,"source":"file"},{"model":"iPhone 15 (3349 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 15 (3349 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":2170.0,"source":"file"},{"model":"iPhone 15 Pro (3274 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 15 Pro (3274 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":3850.0,"source":"file"},{"model":"iPhone 15 Pro (3274 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 15 Pro (3274 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":2290.0,"source":"file"},{"model":"iPhone 15 Pro Max (4422 mAh) ориг 100% (Diagnostic, подлинное)","title":"АКБ для iPhone 15 Pro Max (4422 mAh) ориг 100% (Diagnostic, подлинное)","type":"battery","quality":"diagnostic","price":4010.0,"source":"file"},{"model":"iPhone 15 Pro Max (4422 mAh) ориг 100% (лого,без ошибки,0 циклов)","title":"АКБ для iPhone 15 Pro Max (4422 mAh) ориг 100% (лого,без ошибки,0 циклов)","type":"battery","quality":"ориг 100%","price":2340.0,"source":"file"},{"model":"iPhone 11 (3610 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 11 (3610 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1570.0,"source":"file"},{"model":"iPhone 11 Pro (3546 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 11 Pro (3546 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1810.0,"source":"file"},{"model":"iPhone 11 Pro Max (4469 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 11 Pro Max (4469 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1980.0,"source":"file"},{"model":"iPhone 12 Mini (2727 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 12 Mini (2727 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1570.0,"source":"file"},{"model":"iPhone 12 Pro Max (4187 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 12 Pro Max (4187 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1980.0,"source":"file"},{"model":"iPhone 12/12 Pro (3315 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 12/12 Pro (3315 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1690.0,"source":"file"},{"model":"iPhone 13 (3780 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 13 (3780 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1810.0,"source":"file"},{"model":"iPhone 13 Pro (3580 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 13 Pro (3580 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1980.0,"source":"file"},{"model":"iPhone 13 Pro Max (4780 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 13 Pro Max (4780 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":2000.0,"source":"file"},{"model":"iPhone 14 Pro (3780 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 14 Pro (3780 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":2030.0,"source":"file"},{"model":"iPhone 14 Pro Max (4860 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 14 Pro Max (4860 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":2170.0,"source":"file"},{"model":"iPhone 6 Plus (3510 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 6 Plus (3510 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":620.0,"source":"file"},{"model":"iPhone 7 (2400 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 7 (2400 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":820.0,"source":"file"},{"model":"iPhone 8 (2700 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 8 (2700 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":970.0,"source":"file"},{"model":"iPhone 8 Plus (3300 mAh) Elephant повышенной емкости","title":"АКБ для iPhone 8 Plus (3300 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1090.0,"source":"file"},{"model":"iPhone SE 2020 (2321 mAh) Elephant повышенной емкости","title":"АКБ для iPhone SE 2020 (2321 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":820.0,"source":"file"},{"model":"iPhone X (3216 mAh) Elephant повышенной емкости","title":"АКБ для iPhone X (3216 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1400.0,"source":"file"},{"model":"iPhone XR (3442 mAh) Elephant повышенной емкости","title":"АКБ для iPhone XR (3442 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1400.0,"source":"file"},{"model":"iPhone XS (3158 mAh) Elephant повышенной емкости","title":"АКБ для iPhone XS (3158 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1570.0,"source":"file"},{"model":"iPhone XS Max (3674 mAh) Elephant повышенной емкости","title":"АКБ для iPhone XS Max (3674 mAh) Elephant повышенной емкости","type":"battery","quality":"elephant","price":1740.0,"source":"file"},{"model":"iPhone 11 (3110 mAh) FOXCONN","title":"АКБ для iPhone 11 (3110 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1190.0,"source":"file"},{"model":"iPhone 11 Pro (3046 mAh) FOXCONN","title":"АКБ для iPhone 11 Pro (3046 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1410.0,"source":"file"},{"model":"iPhone 11 Pro Max (3969 mAh) FOXCONN","title":"АКБ для iPhone 11 Pro Max (3969 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1510.0,"source":"file"},{"model":"iPhone 12 Mini (2227 mAh) FOXCONN","title":"АКБ для iPhone 12 Mini (2227 mAh) FOXCONN","type":"battery","quality":"foxconn","price":880.0,"source":"file"},{"model":"iPhone 12 Pro Max (3687 mAh) FOXCONN","title":"АКБ для iPhone 12 Pro Max (3687 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1570.0,"source":"file"},{"model":"iPhone 12/12 Pro (2815 mAh) FOXCONN","title":"АКБ для iPhone 12/12 Pro (2815 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1100.0,"source":"file"},{"model":"iPhone 13 (3227 mAh) FOXCONN","title":"АКБ для iPhone 13 (3227 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1190.0,"source":"file"},{"model":"iPhone 13 Mini (2406 mAh) FOXCONN","title":"АКБ для iPhone 13 Mini (2406 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1190.0,"source":"file"},{"model":"iPhone 13 Pro (3095 mAh) FOXCONN","title":"АКБ для iPhone 13 Pro (3095 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1600.0,"source":"file"},{"model":"iPhone 13 Pro Max (4352 mAh) FOXCONN","title":"АКБ для iPhone 13 Pro Max (4352 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1600.0,"source":"file"},{"model":"iPhone 14 (3279 mAh) FOXCONN","title":"АКБ для iPhone 14 (3279 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1410.0,"source":"file"},{"model":"iPhone 14 Pro (3200 mAh) FOXCONN","title":"АКБ для iPhone 14 Pro (3200 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1600.0,"source":"file"},{"model":"iPhone 14 Pro Max (4323 mAh) FOXCONN","title":"АКБ для iPhone 14 Pro Max (4323 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1790.0,"source":"file"},{"model":"iPhone 15 (3349 mAh) FOXCONN","title":"АКБ для iPhone 15 (3349 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1540.0,"source":"file"},{"model":"iPhone 15 Pro (3274 mAh) FOXCONN","title":"АКБ для iPhone 15 Pro (3274 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1690.0,"source":"file"},{"model":"iPhone 15 Pro Max (4422 mAh) FOXCONN","title":"АКБ для iPhone 15 Pro Max (4422 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1790.0,"source":"file"},{"model":"iPhone 16 (3561 mAh) FOXCONN","title":"АКБ для iPhone 16 (3561 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1940.0,"source":"file"},{"model":"iPhone 16 Pro (3582 mAh) FOXCONN","title":"АКБ для iPhone 16 Pro (3582 mAh) FOXCONN","type":"battery","quality":"foxconn","price":2100.0,"source":"file"},{"model":"iPhone 7 (1960 mAh) FOXCONN","title":"АКБ для iPhone 7 (1960 mAh) FOXCONN","type":"battery","quality":"foxconn","price":790.0,"source":"file"},{"model":"iPhone 8 (1821mAh) FOXCONN","title":"АКБ для iPhone 8 (1821mAh) FOXCONN","type":"battery","quality":"foxconn","price":760.0,"source":"file"},{"model":"iPhone 8 Plus (2691 mAh) FOXCONN","title":"АКБ для iPhone 8 Plus (2691 mAh) FOXCONN","type":"battery","quality":"foxconn","price":850.0,"source":"file"},{"model":"iPhone SE (1624 mAh) FOXCONN","title":"АКБ для iPhone SE (1624 mAh) FOXCONN","type":"battery","quality":"foxconn","price":660.0,"source":"file"},{"model":"iPhone SE 2020 (1821 mAh) FOXCONN","title":"АКБ для iPhone SE 2020 (1821 mAh) FOXCONN","type":"battery","quality":"foxconn","price":820.0,"source":"file"},{"model":"iPhone SE 2022 (2018 mAh) FOXCONN","title":"АКБ для iPhone SE 2022 (2018 mAh) FOXCONN","type":"battery","quality":"foxconn","price":880.0,"source":"file"},{"model":"iPhone X (2716 mAh) FOXCONN","title":"АКБ для iPhone X (2716 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1260.0,"source":"file"},{"model":"iPhone XR (2942 mAh) FOXCONN","title":"АКБ для iPhone XR (2942 mAh) FOXCONN","type":"battery","quality":"foxconn","price":940.0,"source":"file"},{"model":"iPhone XS (2658 mAh) FOXCONN","title":"АКБ для iPhone XS (2658 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1410.0,"source":"file"},{"model":"iPhone XS Max (3174 mAh) FOXCONN","title":"АКБ для iPhone XS Max (3174 mAh) FOXCONN","type":"battery","quality":"foxconn","price":1410.0,"source":"file"},{"model":"iPhone 11 Pro Max (3969 mAh) HOCO","title":"АКБ для iPhone 11 Pro Max (3969 mAh) HOCO","type":"battery","quality":"hoco","price":690.0,"source":"file"},{"model":"iPhone 11 Pro Max (3969 mAh) HQ","title":"АКБ для iPhone 11 Pro Max (3969 mAh) HQ","type":"battery","quality":"hq","price":670.0,"source":"file"},{"model":"iPhone 12 mini (2227 mAh) HQ","title":"АКБ для iPhone 12 mini (2227 mAh) HQ","type":"battery","quality":"hq","price":380.0,"source":"file"},{"model":"iPhone 12 Pro Max (3687 mAh) HQ","title":"АКБ для iPhone 12 Pro Max (3687 mAh) HQ","type":"battery","quality":"hq","price":690.0,"source":"file"},{"model":"iPhone 13 Pro Max (4352 mAh) HQ","title":"АКБ для iPhone 13 Pro Max (4352 mAh) HQ","type":"battery","quality":"hq","price":680.0,"source":"file"},{"model":"iPhone 14 (3279 mAh) HQ","title":"АКБ для iPhone 14 (3279 mAh) HQ","type":"battery","quality":"hq","price":590.0,"source":"file"},{"model":"iPhone 14 Pro Max (4323 mAh) HQ","title":"АКБ для iPhone 14 Pro Max (4323 mAh) HQ","type":"battery","quality":"hq","price":760.0,"source":"file"},{"model":"iPhone 15 Pro Max (4422 mAh) HQ","title":"АКБ для iPhone 15 Pro Max (4422 mAh) HQ","type":"battery","quality":"hq","price":760.0,"source":"file"},{"model":"iPhone 6 Plus (2915 mAh) HQ","title":"АКБ для iPhone 6 Plus (2915 mAh) HQ","type":"battery","quality":"hq","price":260.0,"source":"file"},{"model":"iPhone SE 2022 (2018 mAh) HQ","title":"АКБ для iPhone SE 2022 (2018 mAh) HQ","type":"battery","quality":"hq","price":330.0,"source":"file"},{"model":"iPhone 11 (3500 mAh) JСID повышенной емкости","title":"АКБ для iPhone 11 (3500 mAh) JСID повышенной емкости","type":"battery","quality":"jcid","price":810.0,"source":"file"},{"model":"iPhone 11 Pro (3400 mAh) JCID повышенной емкости","title":"АКБ для iPhone 11 Pro (3400 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1130.0,"source":"file"},{"model":"iPhone 11 Pro Max (4440 mAh) JСID повышенной емкости","title":"АКБ для iPhone 11 Pro Max (4440 mAh) JСID повышенной емкости","type":"battery","quality":"jcid","price":1280.0,"source":"file"},{"model":"iPhone 12 Mini (2460 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 12 Mini (2460 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1280.0,"source":"file"},{"model":"iPhone 12 Pro Max (4450 mAh) JСID повышенной емкости","title":"АКБ для iPhone 12 Pro Max (4450 mAh) JСID повышенной емкости","type":"battery","quality":"jcid","price":1300.0,"source":"file"},{"model":"iPhone 12 Pro Max (4530 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 12 Pro Max (4530 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1540.0,"source":"file"},{"model":"iPhone 12/12 Pro (3200 mAh) JСID повышенной емкости","title":"АКБ для iPhone 12/12 Pro (3200 mAh) JСID повышенной емкости","type":"battery","quality":"jcid","price":830.0,"source":"file"},{"model":"iPhone 12/12 Pro (3230 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 12/12 Pro (3230 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1350.0,"source":"file"},{"model":"iPhone 13 (3500 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 13 (3500 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1390.0,"source":"file"},{"model":"iPhone 13 (3500 mAh) JСID повышенной емкости","title":"АКБ для iPhone 13 (3500 mAh) JСID повышенной емкости","type":"battery","quality":"jcid","price":940.0,"source":"file"},{"model":"iPhone 13 Pro (3300 mAh) JСID повышенной емкости","title":"АКБ для iPhone 13 Pro (3300 mAh) JСID повышенной емкости","type":"battery","quality":"jcid","price":1220.0,"source":"file"},{"model":"iPhone 13 Pro (3330 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 13 Pro (3330 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1560.0,"source":"file"},{"model":"iPhone 13 Pro Max (4550 mAh) JCID повышенной емкости","title":"АКБ для iPhone 13 Pro Max (4550 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1480.0,"source":"file"},{"model":"iPhone 13 Pro Max (4790 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 13 Pro Max (4790 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1740.0,"source":"file"},{"model":"iPhone 14 (3590 mAh) JCID повышенной емкости","title":"АКБ для iPhone 14 (3590 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1040.0,"source":"file"},{"model":"iPhone 14 Pro (3400 mAh) JCID повышенной емкости","title":"АКБ для iPhone 14 Pro (3400 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1390.0,"source":"file"},{"model":"iPhone 14 Pro (3410 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 14 Pro (3410 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1740.0,"source":"file"},{"model":"iPhone 14 Pro Max (4770 mAh) JCID повышенной емкости","title":"АКБ для iPhone 14 Pro Max (4770 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1630.0,"source":"file"},{"model":"iPhone 14 Pro Max (4790 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 14 Pro Max (4790 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1910.0,"source":"file"},{"model":"iPhone 15 (3520 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 15 (3520 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":1630.0,"source":"file"},{"model":"iPhone 15 (3550 mAh) JCID повышенной емкости","title":"АКБ для iPhone 15 (3550 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1220.0,"source":"file"},{"model":"iPhone 15 Pro (3420 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 15 Pro (3420 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":2000.0,"source":"file"},{"model":"iPhone 15 Pro (3430 mAh) JCID повышенной емкости","title":"АКБ для iPhone 15 Pro (3430 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1480.0,"source":"file"},{"model":"iPhone 15 Pro Max (4780 mAh) JCID (верификация, пов.емкость)","title":"АКБ для iPhone 15 Pro Max (4780 mAh) JCID (верификация, пов.емкость)","type":"battery","quality":"jcid","price":2280.0,"source":"file"},{"model":"iPhone 15 Pro Max (4800 mAh) JCID повышенной емкости","title":"АКБ для iPhone 15 Pro Max (4800 mAh) JCID повышенной емкости","type":"battery","quality":"jcid","price":1760.0,"source":"file"},{"model":"iPhone 11 (3110 mAh) New Orig","title":"АКБ для iPhone 11 (3110 mAh) New Orig","type":"battery","quality":"new orig","price":770.0,"source":"file"},{"model":"iPhone 11 Pro (3046 mAh) New Orig","title":"АКБ для iPhone 11 Pro (3046 mAh) New Orig","type":"battery","quality":"new orig","price":990.0,"source":"file"},{"model":"iPhone 11 Pro Max (3969 mAh) New Orig","title":"АКБ для iPhone 11 Pro Max (3969 mAh) New Orig","type":"battery","quality":"new orig","price":990.0,"source":"file"},{"model":"iPhone 11 Pro Max (3969 mAh) ориг 100%","title":"АКБ для iPhone 11 Pro Max (3969 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":830.0,"source":"file"},{"model":"iPhone 12 Mini (2227 mAh) New Orig","title":"АКБ для iPhone 12 Mini (2227 mAh) New Orig","type":"battery","quality":"new orig","price":710.0,"source":"file"},{"model":"iPhone 12 Pro Max (3687 mAh) New Orig","title":"АКБ для iPhone 12 Pro Max (3687 mAh) New Orig","type":"battery","quality":"new orig","price":970.0,"source":"file"},{"model":"iPhone 12 Pro Max (3687 mAh) ориг 100%","title":"АКБ для iPhone 12 Pro Max (3687 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":890.0,"source":"file"},{"model":"iPhone 12/12 Pro (2815 mAh) New Orig","title":"АКБ для iPhone 12/12 Pro (2815 mAh) New Orig","type":"battery","quality":"new orig","price":710.0,"source":"file"},{"model":"iPhone 13 (3227 mAh) New Orig","title":"АКБ для iPhone 13 (3227 mAh) New Orig","type":"battery","quality":"new orig","price":740.0,"source":"file"},{"model":"iPhone 13 Pro (3095 mAh) New Orig","title":"АКБ для iPhone 13 Pro (3095 mAh) New Orig","type":"battery","quality":"new orig","price":1110.0,"source":"file"},{"model":"iPhone 13 Pro Max (4352 mAh) New Orig","title":"АКБ для iPhone 13 Pro Max (4352 mAh) New Orig","type":"battery","quality":"new orig","price":1220.0,"source":"file"},{"model":"iPhone 14 (3279 mAh) New Orig","title":"АКБ для iPhone 14 (3279 mAh) New Orig","type":"battery","quality":"new orig","price":850.0,"source":"file"},{"model":"iPhone 14 Pro (3200 mAh) New Orig","title":"АКБ для iPhone 14 Pro (3200 mAh) New Orig","type":"battery","quality":"new orig","price":1160.0,"source":"file"},{"model":"iPhone 14 Pro Max (4323 mAh) New Orig","title":"АКБ для iPhone 14 Pro Max (4323 mAh) New Orig","type":"battery","quality":"new orig","price":1280.0,"source":"file"},{"model":"iPhone 14 Pro Max (4323 mAh) ориг 100%","title":"АКБ для iPhone 14 Pro Max (4323 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":1060.0,"source":"file"},{"model":"iPhone 15 (3349 mAh) New Orig","title":"АКБ для iPhone 15 (3349 mAh) New Orig","type":"battery","quality":"new orig","price":1170.0,"source":"file"},{"model":"iPhone 15 (3349 mAh) ориг 100%","title":"АКБ для iPhone 15 (3349 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":1060.0,"source":"file"},{"model":"iPhone 15 Pro (3274 mAh) New Orig","title":"АКБ для iPhone 15 Pro (3274 mAh) New Orig","type":"battery","quality":"new orig","price":1300.0,"source":"file"},{"model":"iPhone 15 Pro (3274 mAh) ориг 100%","title":"АКБ для iPhone 15 Pro (3274 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":1120.0,"source":"file"},{"model":"iPhone 15 Pro Max (4422 mAh) New Orig","title":"АКБ для iPhone 15 Pro Max (4422 mAh) New Orig","type":"battery","quality":"new orig","price":1460.0,"source":"file"},{"model":"iPhone 15 Pro Max (4422 mAh) ориг 100%","title":"АКБ для iPhone 15 Pro Max (4422 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":1190.0,"source":"file"},{"model":"iPhone 6 Plus (2915 mAh) ориг 100%","title":"АКБ для iPhone 6 Plus (2915 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":440.0,"source":"file"},{"model":"iPhone SE 2022 (2018 mAh) ориг 100%","title":"АКБ для iPhone SE 2022 (2018 mAh) ориг 100%","type":"battery","quality":"ориг 100%","price":460.0,"source":"file"},{"model":"iPhone X (2716 mAh) New Orig","title":"АКБ для iPhone X (2716 mAh) New Orig","type":"battery","quality":"new orig","price":710.0,"source":"file"},{"model":"iPhone XR (2942 mAh) New Orig","title":"АКБ для iPhone XR (2942 mAh) New Orig","type":"battery","quality":"new orig","price":630.0,"source":"file"},{"model":"iPhone XS (2658 mAh) New Orig","title":"АКБ для iPhone XS (2658 mAh) New Orig","type":"battery","quality":"new orig","price":940.0,"source":"file"},{"model":"iPhone XS Max (3174 mAh) New Orig","title":"АКБ для iPhone XS Max (3174 mAh) New Orig","type":"battery","quality":"new orig","price":770.0,"source":"file"}];
+
+const rawCatalogText = `
+М7767729	2007677297960	Дисплей Realme GT6 (RMX3851)+тачскрин (черный) ориг 100%	**	4'390.00 руб.
+М7767733	2007677337963	Дисплей Realme Note 50 (RMX3834) в рамке (черный) ориг 100%	**	1'050.00 руб.
+М7765284	2007652847968	Дисплей Realme Pad 10,4"+тачскрин (черный)	*	3'490.00 руб.
+М7767201	2007672017969	Дисплей Realme Pad Mini 8,7"+тачскрин (черный)	*	1'450.00 руб.
+М7762259	2007622597961	Дисплей Realme V20 5G (RMX3610)+тачскрин (черный) ориг 100%	*	1'100.00 руб.
+М7759112	2007591127961	Дисплей Realme X3 SuperZoom / X3+тачскрин (черный)	*	1'100.00 руб.
+М7754825	2007548257963	Дисплей Realme XT/X2/OPPO Reno Z (RMX1921/CPH1979)+тачскрин (черный) TFT	*	1'390.00 руб.
+М7767152	2007671527964	Задняя крышка Realme 6 Pro (RMX2063) красная молния	*	180.00 руб.
+М7765094	2007650947967	Задняя крышка Realme 8 4G/8 Pro (RMX3085/RMX3081) черная	*	140.00 руб.
+М7765090	2007650907961	Задняя крышка Realme C25/C25s (RMX3191/RMX3195) черная	*	160.00 руб.
+М7765095	2007650957966	Задняя крышка Realme C3 (RMX2020) синяя	*	140.00 руб.
+М7768208	2007682087969	Задняя крышка Realme C30 (RMX3581) голубая	*	180.00 руб.
+М7765085	2007650857969	Задняя крышка Realme C30 (RMX3581) черная	*	220.00 руб.
+М7768209	2007682097968	Задняя крышка Realme C31 (RMX3501) со стеклом камеры (зеленая)	*	220.00 руб.
+М7768211	2007682117963	Задняя крышка Realme C35 (RMX3511) зеленая	*	160.00 руб.
+М7768212	2007682127962	Задняя крышка Realme C35 (RMX3511) черная	*	150.00 руб.
+М7768268	2007682687964	Задняя крышка Realme C51 (RMX3830) зеленая	*	150.00 руб.
+М7768269	2007682697963	Задняя крышка Realme C51 (RMX3830) черная	*	190.00 руб.
+М7769085	2007690857962	Задняя крышка Realme C63 (RMX3939) со стеклом камеры (синяя)	*	280.00 руб.
+М7769764	2007697647960	Задняя крышка Realme C65 4G (RMX3910) черная	*	170.00 руб.
+М7769769	2007697697965	Задняя крышка Realme Note 60 (RMX3933) со стеклом камеры (черная)	*	390.00 руб.
+М7769770	2007697707961	Задняя крышка Realme Note 60 (RMX3933) черная	*	190.00 руб.
+М7760647	2007606477968	Задняя крышка Samsung A03 (A035F) синяя	*	130.00 руб.
+М7754067	2007540677967	Задняя крышка Samsung A105F/DS (A10) черная	*	150.00 руб.
+М7769295	2007692957962	Задняя крышка Samsung A115F (A11) со стеклом камеры (черная)	*	230.00 руб.
+М7757672	2007576727964	Задняя крышка Samsung A125F/A127F Nacho (A12/A12) со стеклом камеры (черная)	*	150.00 руб.
+М7768234	2007682347964	Задняя крышка Samsung A146B (A14 5G) черная	*	110.00 руб.
+М7768235	2007682357963	Задняя крышка Samsung A155F/A156B (A15 4G/5G) черная	*	120.00 руб.
+М7754483	2007544837961	Задняя крышка Samsung A202F (A20E) белая	*	90.00 руб.
+М7754646	2007546467968	Задняя крышка Samsung A207F (A20s) синяя	*	80.00 руб.
+М7754647	2007546477967	Задняя крышка Samsung A207F (A20s) черная	*	100.00 руб.
+0L-00050322	Задняя крышка для Samsung Galaxy A01 Core SM-A013 (красный)	280.00	1
+0L-00050320	Задняя крышка для Samsung Galaxy A01 Core SM-A013 (черный)	250.00	1
+0L-00050325	Задняя крышка для Samsung Galaxy A01 SM-A015 (красный)	180.00	1
+0L-00050324	Задняя крышка для Samsung Galaxy A01 SM-A015 (синий)	180.00	1
+0L-00050323	Задняя крышка для Samsung Galaxy A01 SM-A015 (черный)	220.00	1
+0L-00050978	Задняя крышка для Samsung Galaxy A01 SM-M015 (черный)	170.00	1
+0L-00050326	Задняя крышка для Samsung Galaxy A21s SM-A217 (черный)	200.00	1
+0L-00050329	Задняя крышка для Samsung Galaxy A80 SM-A805 (золотистый)	300.00	2
+0L-00050327	Задняя крышка для Samsung Galaxy A80 SM-A805 (черный)	250.00	2
+0L-00050985	Задняя крышка для Samsung Galaxy M31s SM-M317 (синий)	250.00	2
+0L-00050984	Задняя крышка для Samsung Galaxy M31s SM-M317 (черный)	230.00	1
+0L-00050331	Задняя крышка для Samsung Galaxy S20 FE SM-G780 (белый)	260.00	1
+0L-00050332	Задняя крышка для Samsung Galaxy S20 FE SM-G780 (синий)	220.00	1
+М7763159	2007631597969	Дисплей для iPhone 11 (In-Сell)+тачскрин (GX) с заменяемой IC	***	1'190.00 руб.
+М7762763	2007627637969	Дисплей для iPhone 11 (In-Сell)+тачскрин (JK) New	***	1'390.00 руб.
+М7762760	2007627607962	Дисплей для iPhone 11 (In-Сell)+тачскрин с заменяемой IC	**	1'050.00 руб.
+М7764911	2007649117968	Дисплей для iPhone 11 Pro (In-Сell)+тачскрин	**	1'200.00 руб.
+М7768500	2007685007964	Дисплей для iPhone 11 Pro (In-Сell)+тачскрин (GX) с заменяемой IC	*	1'290.00 руб.
+М7755590	2007555907967	Дисплей для iPhone 11 Pro (In-Сell)+тачскрин (JK)	**	1'490.00 руб.
+М7762708	2007627087962	Дисплей для iPhone 11 Pro Max (In-Сell)+тачскрин	*	1'190.00 руб.
+М7767506	2007675067961	Дисплей для iPhone 12 Mini (In-Сell)+тачскрин (JK)	*	2'400.00 руб.
+М7764912	2007649127967	Дисплей для iPhone 12 Pro Max (In-Сell)+тачскрин	*	1'290.00 руб.
+М7759102	2007591027964	Дисплей для iPhone 12 Pro Max (In-Сell)+тачскрин (JK)	*	2'590.00 руб.
+М7768502	2007685027962	Дисплей для iPhone 12/12 Pro (In-Сell)+тачскрин (GX) с заменяемой IC	*	1'490.00 руб.
+М7759101	2007591017965	Дисплей для iPhone 12/12 Pro (In-Сell)+тачскрин (JK)	**	1'690.00 руб.
+М7764913	2007649137966	Дисплей для iPhone 12/12 Pro (In-Сell)+тачскрин c заменяемой IC	*	1'200.00 руб.
+М7762076	2007620767960	Дисплей для iPhone 13 (In-Сell)+тачскрин (JK)	**	1'890.00 руб.
+М7765147	2007651477968	Дисплей для iPhone 13 (In-Сell)+тачскрин c заменяемой IC	*	1'290.00 руб.
+М7769077	2007690777968	Дисплей для iPhone 13 Mini (A2630) (In-Сell)+тачскрин c заменяемой IC	*	1'800.00 руб.
+М7767365	2007673657966	Дисплей для iPhone 13 Pro (In-Сell)+тачскрин (JK)	*	2'390.00 руб.
+М7762924	2007629247968	Дисплей для iPhone 13 Pro (In-Сell)+тачскрин c заменяемой IC	*	1'690.00 руб.
+М7762925	2007629257967	Дисплей для iPhone 13 Pro Max (In-Сell)+тачскрин	*	1'790.00 руб.
+М7767366	2007673667965	Дисплей для iPhone 13 Pro Max (In-Сell)+тачскрин (JK)	*	2'500.00 руб.
+М7768478	2007684787966	Дисплей для iPhone 13 Pro Max (In-Сell)+тачскрин (TC) с заменяемой IC	*	2'450.00 руб.
+М7767229	2007672297965	Дисплей для iPhone 14 (In-Сell)+тачскрин	*	1'390.00 руб.
+М7762077	2007620777969	Дисплей для iPhone 14 (In-Сell)+тачскрин (JK)	*	2'000.00 руб.
+М7768480	2007684807961	Дисплей для iPhone 14 (In-Сell)+тачскрин (TC) с заменяемой IC	*	1'950.00 руб.
+М7767367	2007673677964	Дисплей для iPhone 14 Pro (In-Сell)+тачскрин (JK)	*	2'400.00 руб.
+М7767786	2007677867965	Дисплей для iPhone 14 Pro (In-Сell)+тачскрин (с заменяемой IC)	*	1'690.00 руб.
+М7767368	2007673687963	Дисплей для iPhone 14 Pro Max (In-Сell)+тачскрин (JK)	*	3'300.00 руб.
+М7767787	2007677877964	Дисплей для iPhone 14 Pro Max (In-Сell)+тачскрин (с заменяемой IC)	*	2'000.00 руб.
+М7767800	2007678007964	Дисплей для iPhone 15 (In-Сell)+тачскрин (JK)	*	2'290.00 руб.
+М7767378	2007673787960	Дисплей для iPhone 15 (In-Сell)+тачскрин (с заменяемой IC)	*	1'490.00 руб.
+М7767370	2007673707968	Дисплей для iPhone 15 Pro (In-Сell)+тачскрин (JK)	*	2'590.00 руб.
+М7767788	2007677887963	Дисплей для iPhone 15 Pro (In-Сell)+тачскрин (с заменяемой IC)	*	1'690.00 руб.
+М7767371	2007673717967	Дисплей для iPhone 15 Pro Max (In-Сell)+тачскрин (JK)	*	3'550.00 руб.
+М7767789	2007677897962	Дисплей для iPhone 15 Pro Max (In-Сell)+тачскрин (с заменяемой IC)	*	1'900.00 руб.
+М7767790	2007677907968	Дисплей для iPhone 16 (In-Сell)+тачскрин (с заменяемой IC)	*	2'800.00 руб.
+М7767791	2007677917967	Дисплей для iPhone 16 Pro (In-Сell)+тачскрин	*	4'800.00 руб.
+М7767792	2007677927966	Дисплей для iPhone 16 Pro Max (In-Сell)+тачскрин (с заменяемой IC)	*	5'800.00 руб.
+М7762709	2007627097961	Дисплей для iPhone X (In-Сell)+тачскрин	**	890.00 руб.
+М7755505	2007555057969	Дисплей для iPhone X (In-Сell)+тачскрин (JK)	**	1'250.00 руб.
+М7762765	2007627657967	Дисплей для iPhone XR (In-Сell)+тачскрин	*	950.00 руб.
+М7760881	2007608817960	Дисплей для iPhone XR (In-Сell)+тачскрин (GX)	*	1'200.00 руб.
+М7762764	2007627647968	Дисплей для iPhone XR (In-Сell)+тачскрин (JK) New	**	1'450.00 руб.
+М7764914	2007649147965	Дисплей для iPhone XS (In-Сell)+тачскрин	**	950.00 руб.
+М7755588	2007555887962	Дисплей для iPhone XS (In-Сell)+тачскрин (JK)	*	1'290.00 руб.
+М7764915	2007649157964	Дисплей для iPhone XS Max (In-Сell)+тачскрин	*	1'100.00 руб.
+М7763160	2007631607965	Дисплей для iPhone 11 Pro (Hard Oled)+тачскрин (GX) с заменяемой IC	*	2'500.00 руб.
+М7762564	2007625647960	Дисплей для iPhone 12 Mini (Hard Oled)+тачскрин (GX)	*	4'600.00 руб.
+М7763161	2007631617964	Дисплей для iPhone 12 Pro Max (Soft Oled)+тачскрин (GX) с заменяемой IC	*	4'600.00 руб.
+М7767796	2007677967962	Дисплей для iPhone 12 Pro Max (Soft Oled)+тачскрин (с заменяемой IC)	*	4'700.00 руб.
+М7769285	2007692857965	Дисплей для iPhone 12/12 Pro (Hard Oled)+тачскрин (JCID с привязкой без ошибки)	**	4'690.00 руб.
+М7767797	2007677977961	Дисплей для iPhone 12/12 Pro (Hard Oled)+тачскрин (с заменяемой IC)	*	3'290.00 руб.
+М7766665	2007666657966	Дисплей для iPhone 13 (Hard Oled)+тачскрин	*	3'500.00 руб.
+М7763163	2007631637962	Дисплей для iPhone 13 (Hard Oled)+тачскрин (GX) с заменяемой IC	**	3'600.00 руб.
+М7768948	2007689487960	Дисплей для iPhone 13 (Soft Amoled)+тачскрин (GX) с заменяемой IC	*	4'490.00 руб.
+М7769224	2007692247964	Дисплей для iPhone 13 (Soft Oled)+тачскрин (JCID с привязкой без ошибки)	*	5'400.00 руб.
+М7768976	2007689767963	Дисплей для iPhone 13 Pro (A2640) Soft Oled + ALS Flex (без ошибки)	*	6'700.00 руб.
+М7766664	2007666647967	Дисплей для iPhone 13 Pro (Hard Oled)+тачскрин	*	4'100.00 руб.
+М7767013	2007670137966	Дисплей для iPhone 13 Pro (Hard Oled)+тачскрин (GX) с заменяемой IC	*	4'300.00 руб.
+М7768958	2007689587967	Дисплей для iPhone 13 Pro (Soft Amoled 120 Гц)+тачскрин (GX) с заменяемой IC	*	5'000.00 руб.
+М7769225	2007692257963	Дисплей для iPhone 13 Pro (Soft OLED 120 Гц)+тачскрин (JCID с привязкой без ошибки)	*	6'700.00 руб.
+М7763289	2007632897969	Дисплей для iPhone 13 Pro (Soft Oled)+тачскрин	*	4'600.00 руб.
+М7763290	2007632907965	Дисплей для iPhone 13 Pro Max (Hard Oled)+тачскрин	*	4'000.00 руб.
+М7767811	2007678117960	Дисплей для iPhone 13 Pro Max (Hard Oled)+тачскрин (GX) с заменяемой IC	*	4'600.00 руб.
+М7768959	2007689597966	Дисплей для iPhone 13 Pro Max (Soft Amoled 120 Гц)+тачскрин (GX) с заменяемой IC	*	5'000.00 руб.
+М7761771	2007617717961	Дисплей для iPhone 14 (Hard Oled)+тачскрин	*	3'500.00 руб.
+М7769228	2007692287960	Дисплей для iPhone 14 (Soft OLED)+тачскрин (JCID с привязкой без ошибки)	*	5'600.00 руб.
+М7767014	2007670147965	Дисплей для iPhone 14 Pro (Hard Oled)+тачскрин (GX) с заменяемой IC	*	7'500.00 руб.
+М7767798	2007677987960	Дисплей для iPhone 14 Pro (Hard Oled)+тачскрин с заменяемой IC	*	5'500.00 руб.
+М7769259	2007692597960	Дисплей для iPhone 14 Pro (Soft OLED 120 Гц)+тачскрин (JCID с привязкой без ошибки)	*	11'700.00 руб.
+М7768430	2007684307966	Дисплей для iPhone 14 Pro Max (Hard Oled)+тачскрин с заменяемой IC	*	6'850.00 руб.
+М7768610	2007686107960	Дисплей для iPhone 15 (Hard Oled)+тачскрин (TC) с заменяемой IC	*	7'300.00 руб.
+М7765362	2007653627965	Дисплей для iPhone 15 (Soft Amoled)+тачскрин	*	7'500.00 руб.
+М7768485	2007684857966	Дисплей для iPhone 15 Pro (Hard Oled)+тачскрин (TC) с заменяемой IC	*	7'500.00 руб.
+М7767814	2007678147967	Дисплей для iPhone 15 Pro (Hard Oled)+тачскрин (с заменяемой IC)	*	7'200.00 руб.
+М7765363	2007653637964	Дисплей для iPhone 15 Pro (Soft Amoled)+тачскрин (с заменяемой IC)	*	10'300.00 руб.
+М7769019	2007690197964	Дисплей для iPhone 15 Pro Max (A3106) Soft Oled + ALS Flex (без ошибки)	*	11'000.00 руб.
+М7768843	2007688437966	Дисплей для iPhone 15 Pro Max (Hard Oled)+тачскрин (GX) с заменяемой IC	*	7'050.00 руб.
+М7768957	2007689577968	Дисплей для iPhone 15 Pro Max (Soft Amoled 120 Гц)+тачскрин (GX) с заменяемой IC	*	10'500.00 руб.
+М7767799	2007677997969	Дисплей для iPhone 15 Pro Max (Soft Amoled)+тачскрин	*	8'500.00 руб.
+М7768607	2007686077966	Дисплей для iPhone 16 Pro (Hard Oled)+тачскрин (GX) с заменяемой IC	*	7'900.00 руб.
+М7762766	2007627667966	Дисплей для iPhone X (Hard Oled)+тачскрин	**	2'200.00 руб.
+М7750081	2007500817969	Дисплей для iPhone X (Hard Oled)+тачскрин (GX)	**	2'100.00 руб.
+М7762767	2007627677965	Дисплей для iPhone XS (Hard Oled)+тачскрин	*	2'300.00 руб.
+М7751398	2007513987963	Дисплей для iPhone XS (Hard Oled)+тачскрин (GX)	**	2'200.00 руб.
+М7762768	2007627687964	Дисплей для iPhone XS Max (Hard Oled)+тачскрин	*	2'800.00 руб.
+М7757205	2007572057966	Дисплей для iPhone XS Max (Hard Oled)+тачскрин (GX)	*	2'895.00 руб.
+М7767981	2007679817968	Дисплей для iPhone 11 Pro Max+тачскрин Original Change Glass	*	6'900.00 руб.
+М7767982	2007679827967	Дисплей для iPhone 11 Pro+тачскрин Original Change Glass	*	4'900.00 руб.
+М7763169	2007631697966	Дисплей для iPhone 11+тачскрин ORG Ref c заменяемой IC	****	2'000.00 руб.
+М7768329	2007683297961	Дисплей для iPhone 11+тачскрин Original Change Glass	***	2'450.00 руб.
+М7768937	2007689377964	Дисплей для iPhone 12 Mini Оригинал+ ALS Flex (снятый,без ошибки)	*	7'500.00 руб.
+М7768428	2007684287961	Дисплей для iPhone 12 Mini+тачскрин Original Change Glass	*	5'900.00 руб.
+М7768938	2007689387963	Дисплей для iPhone 12 Pro Max Оригинал+ ALS Flex (снятый,без ошибки)	*	13'500.00 руб.
+М7767983	2007679837966	Дисплей для iPhone 12 Pro Max+тачскрин Original Change Glass	*	12'400.00 руб.
+М7767984	2007679847965	Дисплей для iPhone 12/12 Pro+тачскрин Original Change Glass	**	4'900.00 руб.
+М7767987	2007679877962	Дисплей для iPhone 13 (A2635)+тачскрин Original Change Glass	*	6'500.00 руб.
+М7768634	2007686347960	Дисплей для iPhone 13 Pro (A2640) Оригинал+ ALS Flex	*	8'500.00 руб.
+М7768939	2007689397962	Дисплей для iPhone 13 Pro (A2640) Оригинал+ ALS Flex (снятый,без ошибки)	*	10'900.00 руб.
+М7767986	2007679867963	Дисплей для iPhone 13 Pro (A2640)+тачскрин Original Change Glass	*	8'000.00 руб.
+М7768940	2007689407968	Дисплей для iPhone 13 Pro Max (A2645) Оригинал+ ALS Flex (снятый,без ошибки)	*	14'100.00 руб.
+М7767985	2007679857964	Дисплей для iPhone 13 Pro Max (A2645)+тачскрин Original Change Glass	*	10'800.00 руб.
+М7768943	2007689437965	Дисплей для iPhone 14 (A2883) Оригинал+ ALS Flex (снятый,без ошибки)	*	8'100.00 руб.
+М7767989	2007679897960	Дисплей для iPhone 14 (A2883)+тачскрин Original Change Glass	*	6'600.00 руб.
+М7767988	2007679887961	Дисплей для iPhone 14 Pro (A2891)+тачскрин Original Change Glass	*	17'000.00 руб.
+М7768942	2007689427966	Дисплей для iPhone 14 Pro Max (A2895) Оригинал+ ALS Flex (снятый,без ошибки)	*	24'700.00 руб.
+М7767816	2007678167965	Дисплей для iPhone 14 Pro Max (A2895)+тачскрин Original Change Glass	*	18'700.00 руб.
+М7768944	2007689447964	Дисплей для iPhone 15 (A3090) Оригинал+ ALS Flex (снятый,без ошибки)	*	14'700.00 руб.
+М7767992	2007679927964	Дисплей для iPhone 15 (A3090)+тачскрин Original Change Glass	*	12'600.00 руб.
+М7768945	2007689457963	Дисплей для iPhone 15 Pro (A3102) Оригинал+ ALS Flex (снятый,без ошибки)	*	22'700.00 руб.
+М7767991	2007679917965	Дисплей для iPhone 15 Pro (A3102)+тачскрин Original Change Glass	*	18'500.00 руб.
+М7767990	2007679907966	Дисплей для iPhone 15 Pro Max (A3106)+тачскрин Original Change Glass	*	19'300.00 руб.
+М7768642	2007686427969	Дисплей для iPhone 16 (A3287) Оригинал+ ALS Flex	*	17'500.00 руб.
+М7767822	2007678227966	Дисплей для iPhone 16 (A3287)+тачскрин Original Change Glass	*	15'300.00 руб.
+М7757328	2007573287966	Дисплей для iPhone 6 (PREMIUM)+тачскрин (белый)	*	750.00 руб.
+М7757329	2007573297965	Дисплей для iPhone 6 (PREMIUM)+тачскрин (черный)	*	750.00 руб.
+М7760510	2007605107965	Дисплей для iPhone 6 Plus (PREMIUM)+тачскрин (белый)	***	700.00 руб.
+М7757337	2007573377964	Дисплей для iPhone 6 Plus (PREMIUM)+тачскрин (черный)	**	700.00 руб.
+М7750063	2007500637963	Дисплей для iPhone 5 (TianMa)+тачскрин (черный)	*	600.00 руб.
+М7750064	2007500647962	Дисплей для iPhone 5C (TianMa)+тачскрин (черный)	*	600.00 руб.
+М7750065	2007500657961	Дисплей для iPhone 6 (TianMa)+тачскрин (белый)	****	650.00 руб.
+М7750072	2007500727961	Дисплей для iPhone 6 Plus (TianMa)+тачскрин (белый)	****	600.00 руб.
+М7750071	2007500717962	Дисплей для iPhone 6 Plus (TianMa)+тачскрин (черный)	****	600.00 руб.
+М7750074	2007500747969	Дисплей для iPhone 7 (TianMa)+тачскрин (черный)	*	650.00 руб.
+М7750077	2007500777966	Дисплей для iPhone 8/iPhone SE 2020 (TianMa)+тачскрин (белый)	***	700.00 руб.
+М7750078	2007500787965	Дисплей для iPhone 8/iPhone SE 2020 (TianMa)+тачскрин (черный)	**	700.00 руб.
+М7753639	2007536397961	Задняя крышка (стекло) для iPhone 11 (белая)	****	220.00 руб.
+М7753640	2007536407967	Задняя крышка (стекло) для iPhone 11 (красная)	**	220.00 руб.
+М7753635	2007536357965	Задняя крышка (стекло) для iPhone 11 (фиолетовая)	*	195.00 руб.
+М7769128	2007691287961	Задняя крышка (стекло) для iPhone 11 (фиолетовая) ORG монолитная	*	335.00 руб.
+М7753638	2007536387962	Задняя крышка (стекло) для iPhone 11 (черная)	****	210.00 руб.
+М7768762	2007687627962	Задняя крышка (стекло) для iPhone 11 (черная) ORG монолитная	**	335.00 руб.
+М7769131	2007691317965	Задняя крышка (стекло) для iPhone 11 Pro (темно-зеленая) ORG монолитная	*	550.00 руб.
+М7769132	2007691327964	Задняя крышка (стекло) для iPhone 11 Pro Max (серый космос) ORG монолитная	**	560.00 руб.
+М7758261	2007582617969	Задняя крышка (стекло) для iPhone 12 Pro (графитовая)	*	310.00 руб.
+М7768764	2007687647960	Задняя крышка (стекло) для iPhone 12 Pro (графитовая) ORG монолитная	*	560.00 руб.
+М7758263	2007582637967	Задняя крышка (стекло) для iPhone 12 Pro Max (графитовая)	*	335.00 руб.
+М7768766	2007687667968	Задняя крышка (стекло) для iPhone 13 (черная) ORG монолитная	*	415.00 руб.
+М7768767	2007687677967	Задняя крышка (стекло) для iPhone 13 Pro (графитовая) ORG монолитная	*	640.00 руб.
+М7768768	2007687687966	Задняя крышка (стекло) для iPhone 13 Pro Max (графитовая) ORG монолитная	*	640.00 руб.
+М7768212	2007682127962	Задняя крышка (стекло) для iPhone 14 (красная) со стеклом камеры	*	755.00 руб.
+М7768216	2007682167968	Задняя крышка (стекло) для iPhone 14 (фиолетовая) со стеклом камеры	*	765.00 руб.
+М7768220	2007682207961	Задняя крышка (стекло) для iPhone 14 (черная) со стеклом камеры	*	745.00 руб.
+М7768455	2007684557965	Задняя крышка (стекло) для iPhone 14 Pro Max (темно-фиолетовая) со стеклом камеры	*	790.00 руб.
+М7768457	2007684577963	Задняя крышка (стекло) для iPhone 14 Pro Max (черная) со стеклом камеры	*	755.00 руб.
+М7767443	2007674437963	Задняя крышка (стекло) для iPhone 15 (голубая) со стеклом камеры	*	970.00 руб.
+М7767447	2007674477969	Задняя крышка (стекло) для iPhone 15 Pro (белая) со стеклом камеры	*	1'400.00 руб.
+М7767446	2007674467960	Задняя крышка (стекло) для iPhone 15 Pro (черная) со стеклом камеры	*	1'330.00 руб.
+М7767449	2007674497967	Задняя крышка (стекло) для iPhone 15 Pro Max (серая) со стеклом камеры	*	1'360.00 руб.
+М7767452	2007674527961	Задняя крышка (стекло) для iPhone 15 Pro Max (синяя) со стеклом камеры	*	1'360.00 руб.
+М7767450	2007674507963	Задняя крышка (стекло) для iPhone 15 Pro Max (черный) со стеклом камеры	*	1'400.00 руб.
+М7767879	2007678797964	Задняя крышка (стекло) для iPhone 16 (розовая) со стеклом камеры	*	1'120.00 руб.
+М7767878	2007678787965	Задняя крышка (стекло) для iPhone 16 (черная) со стеклом камеры	*	1'050.00 руб.
+М7767883	2007678837967	Задняя крышка (стекло) для iPhone 16 Pro (белая) со стеклом камеры	*	1'400.00 руб.
+М7767885	2007678857965	Задняя крышка (стекло) для iPhone 16 Pro (серая) со стеклом камеры	*	1'450.00 руб.
+М7767882	2007678827968	Задняя крышка (стекло) для iPhone 16 Pro (черная) со стеклом камеры	*	1'450.00 руб.
+М7767887	2007678877963	Задняя крышка (стекло) для iPhone 16 Pro Max (золото) со стеклом камеры	*	1'460.00 руб.
+0L-00069798	Задняя крышка для Samsung Galaxy S10e SM-G970F со стеклом камеры (синий)	300.00	1
+`;
+
+const rawCatalogTextExtra = `
+М7753473	2007534737967	Тачскрин для iPad Mini 4 (белый)	*	49.00 руб.
+М7753474	2007534747966	Тачскрин для iPad Mini 4 (черный)	*	49.00 руб.
+М7752164	2007521647965	Дисплей для iPhone 6 +тачскрин (белый) ORG Ref	*	850.00 руб.
+М7752165	2007521657964	Дисплей для iPhone 6S +тачскрин (черный) ORG Ref	*	1'200.00 руб.
+М7752175	2007521757961	Дисплей для iPhone 7 +тачскрин (белый) ORG Ref	*	1'340.00 руб.
+М7767972	2007679727960	Дисплей для iPhone 7 Plus (ver:LG DTP; C3F)+тачскрин (белый) ORG Ref	*	1'960.00 руб.
+М7752173	2007521737963	Дисплей для iPhone 7 Plus+тачскрин (белый) ORG Ref	*	1'660.00 руб.
+М7767970	2007679707962	Дисплей для iPhone 8 Plus (ver:LG DTP; C3F)+тачскрин (черный) ORG Ref	*	1'960.00 руб.
+М7752170	2007521707966	Дисплей для iPhone 8 Plus +тачскрин (черный) ORG Ref	*	1'660.00 руб.
+М7752168	2007521687961	Дисплей для iPhone 8/SE 2020/SE 2022+тачскрин (белый) ORG Ref	*	1'250.00 руб.
+М7752167	2007521677962	Дисплей для iPhone 8/SE 2020/SE 2022+тачскрин (черный) ORG Ref	*	1'250.00 руб.
+М7767993	2007679937963	Дисплей для iPhone X+тачскрин (черный) Original Change Glass	*	4'300.00 руб.
+М7753470	2007534707960	Дисплей для iPhone XR+тачскрин ORG Ref	***	1'690.00 руб.
+М7768330	2007683307967	Дисплей для iPhone XR+тачскрин Original Change Glass	**	1'990.00 руб.
+М7768429	2007684297960	Дисплей для iPhone XS Max+тачскрин Original Change Glass	*	5'500.00 руб.
+М7767994	2007679947962	Дисплей для iPhone XS+тачскрин Original Change Glass	*	4'500.00 руб.
+М7757331	2007573317960	Дисплей для iPhone 6S (PREMIUM)+тачскрин (черный)	*	1'100.00 руб.
+М7757334	2007573347967	Дисплей для iPhone 8/iPhone SE 2020 (PREMIUM)+тачскрин (белый)	*	950.00 руб.
+М7750069	2007500697967	Дисплей для iPhone 5S/SE (TianMa)+тачскрин (черный)	*	550.00 руб.
+М7750068	2007500687968	Дисплей для iPhone 6S (TianMa)+тачскрин (черный)	*	650.00 руб.
+М7750909	2007509097966	Дисплей для iPhone 6S Plus (TianMa)+тачскрин (черный)	*	750.00 руб.
+М7750075	2007500757968	Дисплей для iPhone 7 Plus (TianMa)+тачскрин (белый)	*	750.00 руб.
+М7769363	2007693637962	Задняя крышка (стекло) для iPhone 17 (белая) ORG монолитная,со стеклами камер	*	1'950.00 руб.
+М7769366	2007693667969	Задняя крышка (стекло) для iPhone 17 (голубая) ORG монолитная,со стеклами камер	*	1'950.00 руб.
+М7769365	2007693657960	Задняя крышка (стекло) для iPhone 17 (зеленая) ORG монолитная,со стеклами камер	*	1'950.00 руб.
+М7769367	2007693677968	Задняя крышка (стекло) для iPhone 17 (фиолетовая) ORG монолитная, со стеклами камер	*	1'950.00 руб.
+М7769364	2007693647961	Задняя крышка (стекло) для iPhone 17 (черная) ORG монолитная,со стеклами камер	*	1'950.00 руб.
+М7769358	2007693587960	Задняя крышка (стекло) для iPhone 17 Pro (оранжевая)	*	1'050.00 руб.
+М7769359	2007693597969	Задняя крышка (стекло) для iPhone 17 Pro (серебристая)	*	1'050.00 руб.
+М7769357	2007693577961	Задняя крышка (стекло) для iPhone 17 Pro (темно-синяя)	*	1'050.00 руб.
+М7769361	2007693617964	Задняя крышка (стекло) для iPhone 17 Pro Max (оранжевая)	*	1'050.00 руб.
+М7769360	2007693607965	Задняя крышка (стекло) для iPhone 17 Pro Max (серебристая)	*	1'050.00 руб.
+М7769362	2007693627963	Задняя крышка (стекло) для iPhone 17 Pro Max (темно-синяя)	*	1'050.00 руб.
+М7747547	2007475477960	Задняя крышка (стекло) для iPhone 8 (черная)	*	175.00 руб.
+М7747554	2007475547960	Задняя крышка (стекло) для iPhone X (черная)	*	210.00 руб.
+М7750919	2007509197963	Задняя крышка (стекло) для iPhone XR (белая)	*	175.00 руб.
+М7750920	2007509207969	Задняя крышка (стекло) для iPhone XR (черная)	*	185.00 руб.
+М7750707	2007507077960	Задняя крышка (стекло) для iPhone XS (черная)	*	210.00 руб.
+`;
+
+function normalizePriceString(value) {
+  const only = Array.from(String(value)).filter((ch) => '0123456789.,'.includes(ch)).join('').replace(',', '.');
+  return Number(only) || 0;
+}
+
+function detectTypeFromTitle(title) {
+  const lower = title.toLowerCase();
+  if (lower.includes('акб') || lower.includes('аккумулятор')) return 'battery';
+  if (lower.includes('задняя крышка')) return 'android-back';
+  if (lower.includes('дисплей') || lower.includes('тачскрин')) return 'display';
+  return null;
+}
+
+function detectQualityFromTitle(title) {
+  const lower = title.toLowerCase();
+  if (lower.includes('diagnostic')) return 'diagnostic';
+  if (lower.includes('foxconn')) return 'foxconn';
+  if (lower.includes('jcid')) return 'jcid';
+  if (lower.includes('elephant')) return 'elephant';
+  if (lower.includes('new orig')) return 'new orig';
+  if (lower.includes('deji')) return 'deji';
+  if (lower.includes('hq')) return 'hq';
+  if (lower.includes('hoco')) return 'hoco';
+  if (lower.includes('tianma')) return 'tianma';
+  if (lower.includes('premium')) return 'premium';
+  if (lower.includes('incell') || lower.includes('in-сell')) return 'incell';
+  if (lower.includes('oled') || lower.includes('amoled')) return 'oled';
+  if (lower.includes('original') || lower.includes('orig')) return 'original';
+  return 'standard';
+}
+
+function extractModelFromTitle(title, type) {
+  if (type === 'battery' && title.startsWith('АКБ для ')) return title.slice(8).trim();
+  if (type === 'android-back') {
+    if (title.startsWith('Задняя крышка для ')) return title.slice(18).trim();
+    if (title.startsWith('Задняя крышка ')) return title.slice(14).trim();
+  }
+  if (type === 'display') {
+    if (title.startsWith('Дисплейный модуль ')) return title.slice(18).trim();
+    if (title.startsWith('Дисплей для ')) return title.slice(12).trim();
+    if (title.startsWith('Тачскрин для ')) return title.slice(13).trim();
+  }
+  return title;
+}
+
+function parseRawCatalogText(text) {
+  return text
+    .split(String.fromCharCode(10))
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      const parts = line.split(String.fromCharCode(9)).filter(Boolean);
+      if (parts.length < 3) return null;
+      const title = parts.length >= 5 ? parts[2] : parts[1];
+      const rawPrice = parts.length >= 5 ? parts[4] : parts[2];
+      const type = detectTypeFromTitle(title);
+      const price = normalizePriceString(rawPrice);
+      if (!type || !price) return null;
+      return {
+        model: extractModelFromTitle(title, type),
+        title,
+        type,
+        quality: detectQualityFromTitle(title),
+        price,
+        source: 'file-auto',
+      };
+    })
+    .filter(Boolean);
+}
+
+const parsedCatalogParts = [
+  ...fullPartsCatalog,
+  ...parseRawCatalogText(rawCatalogText),
+  ...parseRawCatalogText(rawCatalogTextExtra),
+];
+
+function normalizeModelName(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replaceAll('ё', 'е')
+    .replaceAll('+', ' plus ')
+    .replaceAll('(', ' ')
+    .replaceAll(')', ' ')
+    .replaceAll(',', ' ')
+    .replaceAll('"', ' ')
+    .replaceAll('galaxy', 'samsung')
+    .replaceAll('iphone se 2020', 'iphone 8')
+    .replaceAll('iphone se 2022', 'iphone 8')
+    .replaceAll('iphone se', 'iphone 8')
+    .split('sm-').join(' ')
+    .split('ver:').join(' ')
+    .split('/').join(' ')
+    .split('-').join(' ')
+    .split('_').join(' ')
+    .split('  ').join(' ')
+    .trim();
+}
+
+function getWantedCatalogType(repairKey) {
+  if (repairKey === 'display') return 'display';
+  if (repairKey === 'battery') return 'battery';
+  if (repairKey === 'back') return 'android-back';
+  return null;
+}
+
+function matchesCatalogTier(item, repairKey, partType) {
+  const title = String(item.title || '').toLowerCase();
+  const quality = String(item.quality || '').toLowerCase();
+
+  if (repairKey === 'battery') {
+    if (partType === 'cheap') return ['hq', 'deji', 'hoco', 'new orig', 'standard'].includes(quality) || title.includes('hq') || title.includes('deji') || title.includes('hoco') || title.includes('new orig');
+    if (partType === 'good') return ['foxconn', 'elephant', 'jcid'].includes(quality) || title.includes('foxconn') || title.includes('elephant') || title.includes('jcid');
+    if (partType === 'orig') return title.includes('diagnostic') || title.includes('ориг 100%') || title.includes('orig') || title.includes('original');
+  }
+
+  if (repairKey === 'display') {
+    if (partType === 'cheap') return ['incell', 'tianma', 'premium', 'standard'].includes(quality) || title.includes('incell') || title.includes('in-сell') || title.includes('jk') || title.includes('gx') || title.includes('tianma') || title.includes('premium');
+    if (partType === 'good') return quality === 'oled' || title.includes('hard oled') || title.includes('soft oled') || title.includes('soft amoled') || title.includes('oled');
+    if (partType === 'orig') return quality === 'original' || title.includes('original change glass') || title.includes('als flex') || title.includes('org ref') || title.includes('original');
+  }
+
+  if (repairKey === 'back') {
+    if (partType === 'cheap') return !title.includes('org монолит');
+    if (partType === 'good') return true;
+  }
+
+  return false;
+}
+
+function collectCatalogCandidates(model, repairKey, partType) {
+  const wantedType = getWantedCatalogType(repairKey);
+  if (!wantedType) return [];
+  const aliases = getAliases(model).map(normalizeModelName);
+
+  return parsedCatalogParts
+    .filter((item) => item.type === wantedType)
+    .filter((item) => {
+      const normalizedItem = normalizeModelName(item.model);
+      return aliases.some((alias) => normalizedItem.includes(alias) || alias.includes(normalizedItem));
+    })
+    .filter((item) => matchesCatalogTier(item, repairKey, partType))
+    .map((item) => ({
+      price: item.price,
+      source: item.source || 'file-auto',
+      updatedAt: 'Файл каталога',
+      model: item.model,
+      title: item.title,
+    }))
+    .sort((a, b) => a.price - b.price);
+}
+
 const phoneRepairCatalog = [
   { key: 'display', title: 'Замена дисплея', icon: '📱', type: 'modular', upsell: ['Стекло', 'Плёнка', 'Чистка динамиков'] },
   { key: 'battery', title: 'Замена аккумулятора', icon: '🔋', type: 'modular', upsell: ['Чистка разъёма', 'Проверка зарядки', 'Настройка'] },
@@ -419,6 +819,9 @@ function isTierPriceSane(variantMap, repairKey, partType, price) {
 function collectCandidates(model, repairKey, partType) {
   const aliases = getAliases(model);
   const collected = [];
+
+  collectCatalogCandidates(model, repairKey, partType).forEach((item) => collected.push(item));
+
   aliases.forEach((name) => {
     const mainNode = supplierVariantMap[name];
     const otpNode = supplierVariantMapOtp[name];
@@ -431,7 +834,18 @@ function collectCandidates(model, repairKey, partType) {
       collected.push({ price: otpPrice, source: 'otp', updatedAt: '19.04.2026', model: name });
     }
   });
-  return collected.sort((a, b) => a.price - b.price);
+
+  const deduped = [];
+  const seen = new Set();
+  collected.sort((a, b) => a.price - b.price).forEach((item) => {
+    const key = `${item.model}|${item.price}|${item.source}|${item.title || ''}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      deduped.push(item);
+    }
+  });
+
+  return deduped;
 }
 
 function getMargin(model, repairKey, partType, supplierCost) {
@@ -545,6 +959,73 @@ function buildPricing(model, repairKey, partType) {
   };
 }
 
+function getPartsSortPriority(model) {
+  const text = String(model || '').toLowerCase();
+  if (text.includes('iphone')) return 1;
+  if (text.includes('samsung')) return 2;
+  if (text.includes('redmi') || text.includes('xiaomi') || text.includes('poco')) return 3;
+  if (text.includes('realme')) return 4;
+  if (text.includes('honor')) return 5;
+  if (text.includes('oppo')) return 6;
+  if (text.includes('vivo')) return 7;
+  if (text.includes('tecno')) return 8;
+  if (text.includes('infinix')) return 9;
+  return 20;
+}
+
+function formatPrice(value) {
+  if (typeof value !== 'number' || Number.isNaN(value)) return '—';
+  return `${value.toLocaleString('ru-RU')} ₽`;
+}
+
+function buildPartsInventory() {
+  const rows = [...parsedCatalogParts];
+
+  Object.entries(supplierVariantMap).forEach(([model, services]) => {
+    ['battery', 'display'].forEach((type) => {
+      const tierNode = services[type];
+      if (!tierNode) return;
+      Object.entries(tierNode).forEach(([quality, price]) => {
+        if (typeof price === 'number' && price > 0) {
+          rows.push({ model, title: `${type === 'battery' ? 'АКБ' : 'Дисплей'} · ${quality}`, type, quality, price, source: 'main' });
+        }
+      });
+    });
+  });
+
+  Object.entries(supplierVariantMapOtp).forEach(([model, services]) => {
+    ['battery', 'display'].forEach((type) => {
+      const tierNode = services[type];
+      if (!tierNode) return;
+      Object.entries(tierNode).forEach(([quality, price]) => {
+        if (typeof price === 'number' && price > 0) {
+          rows.push({ model, title: `${type === 'battery' ? 'АКБ' : 'Дисплей'} · ${quality}`, type, quality, price, source: 'otp' });
+        }
+      });
+    });
+  });
+
+  androidBackParts.forEach((item) => rows.push(item));
+
+  const deduped = [];
+  const seen = new Set();
+  rows.forEach((item) => {
+    const key = `${item.model}|${item.title}|${item.type}|${item.quality}|${item.price}|${item.source}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      deduped.push(item);
+    }
+  });
+
+  return deduped.sort((a, b) => {
+    const priorityDiff = getPartsSortPriority(a.model) - getPartsSortPriority(b.model);
+    if (priorityDiff !== 0) return priorityDiff;
+    const modelDiff = a.model.localeCompare(b.model, 'ru');
+    if (modelDiff !== 0) return modelDiff;
+    return String(a.title || '').localeCompare(String(b.title || ''), 'ru');
+  });
+}
+
 export default function RepairPortal() {
   const [dailyTarget, setDailyTarget] = useState(30000);
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -561,8 +1042,19 @@ export default function RepairPortal() {
   const [loginValue, setLoginValue] = useState('');
   const [passwordValue, setPasswordValue] = useState('');
   const [loginError, setLoginError] = useState('');
+  const [partsFilter, setPartsFilter] = useState('all');
+  const [partsSearch, setPartsSearch] = useState('');
 
   const filteredModels = useMemo(() => models[brandTab].filter((model) => model.toLowerCase().includes(search.toLowerCase())), [brandTab, search]);
+  const partsInventory = useMemo(() => buildPartsInventory(), []);
+  const filteredPartsInventory = useMemo(() => {
+    return partsInventory.filter((item) => {
+      const typeOk = partsFilter === 'all' ? true : item.type === partsFilter;
+      const haystack = `${item.model} ${item.title || ''}`.toLowerCase();
+      const searchOk = haystack.includes(partsSearch.toLowerCase());
+      return typeOk && searchOk;
+    });
+  }, [partsInventory, partsFilter, partsSearch]);
 
   const qualityMeta = {
     cheap: { label: 'Дешёвое качество', short: 'База' },
@@ -834,6 +1326,7 @@ export default function RepairPortal() {
           {[
             { id: 'dashboard', label: 'Главная' },
             { id: 'phones', label: 'Телефоны и расчёт' },
+            { id: 'parts', label: 'Все запчасти' },
             { id: 'diagnostics', label: 'Диагностика' },
             { id: 'universal', label: 'Любая техника' },
             { id: 'psychology', label: 'Психология продаж' },
@@ -1018,6 +1511,62 @@ export default function RepairPortal() {
                   <div className="mt-3 flex items-center justify-between border-t border-slate-800 pt-3 text-lg font-black"><span>Итоговый чек</span><span className="text-emerald-400">{totalRetail} ₽</span></div>
                 </div>
               </Card>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'parts' && (
+          <div className="space-y-6">
+            <Card>
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold">Все запчасти на модульный ремонт</h2>
+                  <p className="mt-2 text-sm leading-6 text-slate-400">
+                    Отдельный каталог для быстрого подбора: АКБ, дисплейные модули и задние крышки только на Android.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <Button active={partsFilter === 'all'} onClick={() => setPartsFilter('all')}>Все</Button>
+                  <Button active={partsFilter === 'battery'} onClick={() => setPartsFilter('battery')}>Батареи</Button>
+                  <Button active={partsFilter === 'display'} onClick={() => setPartsFilter('display')}>Дисплеи</Button>
+                  <Button active={partsFilter === 'android-back'} onClick={() => setPartsFilter('android-back')}>Задние крышки Android</Button>
+                </div>
+              </div>
+              <div className="mt-4">
+                <ModelSearchInput initialValue={partsSearch} onSearch={setPartsSearch} onClear={() => setPartsSearch('')} />
+              </div>
+              <div className="mt-4 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+                <span>Найдено позиций: {filteredPartsInventory.length}</span>
+                <Badge className="border-cyan-800/40 bg-cyan-950/20 text-cyan-200">поиск по конкретной модели</Badge>
+                <Badge className="border-amber-800/40 bg-amber-950/20 text-amber-200">Android крышки — только из отдельного прайса</Badge>
+              </div>
+            </Card>
+
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {filteredPartsInventory.map((item, index) => (
+                <Card key={`${item.model}-${item.type}-${item.quality}-${index}`} className="min-w-0">
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div>
+                      <div className="text-lg font-bold">{item.model}</div>
+                      {item.title ? <div className="mt-1 text-xs leading-5 text-slate-500">{item.title}</div> : null}
+                      <div className="mt-2 text-sm text-slate-400">
+                        {item.type === 'battery' ? 'Аккумулятор' : item.type === 'display' ? 'Дисплейный модуль' : 'Задняя крышка Android'}
+                      </div>
+                    </div>
+                    <Badge className={item.type === 'battery' ? 'border-emerald-800/50 bg-emerald-950/30 text-emerald-300' : item.type === 'display' ? 'border-cyan-800/50 bg-cyan-950/30 text-cyan-300' : 'border-fuchsia-800/50 bg-fuchsia-950/30 text-fuchsia-300'}>
+                      {item.type === 'battery' ? 'АКБ' : item.type === 'display' ? 'Дисплей' : 'Крышка'}
+                    </Badge>
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <Badge className="border-slate-700 bg-slate-950 text-slate-300">качество: {item.quality}</Badge>
+                    <Badge className="border-slate-700 bg-slate-950 text-slate-300">источник: {item.source}</Badge>
+                  </div>
+                  <div className="mt-5 rounded-2xl bg-slate-950 p-4">
+                    <div className="text-[11px] uppercase tracking-[0.12em] text-slate-500">Закупка</div>
+                    <div className="mt-1 whitespace-nowrap text-2xl font-black text-emerald-300">{formatPrice(item.price)}</div>
+                  </div>
+                </Card>
+              ))}
             </div>
           </div>
         )}
