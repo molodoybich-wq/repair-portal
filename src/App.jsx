@@ -81,8 +81,6 @@ const brandTabs = [
   { id: 'samsung', label: 'Samsung' },
   { id: 'xiaomi', label: 'Xiaomi / Poco / Redmi' },
   { id: 'other', label: 'Другие бренды' },
-];
-
 const models = {
   iphone: [
     'iPhone 4', 'iPhone 5', 'iPhone 5s', 'iPhone 6', 'iPhone 6 Plus', 'iPhone 6s', 'iPhone 6s Plus',
@@ -505,7 +503,6 @@ function normalizePriceString(value) {
   const only = Array.from(String(value)).filter((ch) => '0123456789.,'.includes(ch)).join('').replace(',', '.');
   return Number(only) || 0;
 }
-
 function detectTypeFromTitle(title) {
   const lower = title.toLowerCase();
   if (lower.includes('акб') || lower.includes('аккумулятор')) return 'battery';
@@ -659,8 +656,6 @@ const phoneRepairCatalog = [
   { key: 'charge', title: 'Нижний разъём', icon: '🔌', type: 'diagnostic', diagnosticText: 'По нижнему разъёму цену сразу не обещаем. Причина может быть в разъёме, шлейфе, дорожках, контроллере питания или последствиях влаги. Только диагностика.' },
   { key: 'camera', title: 'Камера', icon: '📷', type: 'diagnostic', diagnosticText: 'По камере цену сразу не называем. Проблема может быть в модуле, шлейфе, питании или плате. Только диагностика.' },
   { key: 'speaker', title: 'Динамик / микрофон', icon: '🔊', type: 'diagnostic', diagnosticText: 'По динамику и микрофону не обещаем простую замену. Причина может быть в сетках, усилителе, шлейфе, окислах или плате. Только диагностика.' },
-];
-
 const diagnosticCategories = [
   {
     key: 'tv',
@@ -692,8 +687,6 @@ const diagnosticCategories = [
     ],
     script: 'По принтеру цену без диагностики не называем. Сначала проверка.',
   },
-];
-
 const universalBlocks = [
   { title: 'Ноутбуки / ПК', bullets: ['Не включается — питание, плата, КЗ.', 'Нет изображения — матрица, шлейф, GPU, питание.', 'Греется — СО, термопаста, кулер.'] },
   { title: 'Игровые приставки', bullets: ['Нет изображения — HDMI, порт, GPU, плата.', 'Не включается — питание, перегрев, плата.'] },
@@ -858,8 +851,6 @@ function getMargin(model, repairKey, partType, supplierCost) {
   if (partType === 'orig') margin += 450;
   if (supplierCost >= 6500) margin += 300;
   return margin;
-}
-
 function getBrandBucket(model) {
   const text = String(model || '').toLowerCase();
   if (text.includes('iphone')) return 'iphone';
@@ -1076,7 +1067,6 @@ export default function RepairPortal() {
     workAndPart: { label: 'Работа + деталь', className: 'border-emerald-800/50 bg-emerald-950/30 text-emerald-300' },
     diagnostic: { label: 'Только диагностика', className: 'border-rose-800/50 bg-rose-950/30 text-rose-300' },
   };
-
   const wizardCards = [
     { id: 'phone-simple', title: 'Телефон · понятная модулька', mode: 'ready', description: 'Сразу расчёт' },
     { id: 'phone-complex', title: 'Телефон · сложный симптом', mode: 'diagnostic', description: 'Только диагностика' },
@@ -1277,8 +1267,6 @@ export default function RepairPortal() {
       </div>
     );
   }
-
-  return (
     <div className="min-h-screen bg-slate-950 text-white">
       <div className="border-b border-slate-800 bg-black p-4">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-6">
@@ -1297,7 +1285,6 @@ export default function RepairPortal() {
             </div>
             <div className="rounded-2xl border border-cyan-900/40 bg-cyan-950/20 px-4 py-2 text-sm text-cyan-200">
               Франшизная логика: подтверждённая закупка → расчёт, нет закупки → только диагностика
-            </div>
           </div>
         </div>
       </div>
@@ -1318,10 +1305,7 @@ export default function RepairPortal() {
                 <div className="text-xs uppercase tracking-[0.15em] text-slate-500">{title}</div>
                 <div className="mt-2 text-sm font-bold text-cyan-300">{text}</div>
               </div>
-            ))}
-          </div>
         </div>
-
         <div className="mb-6 flex flex-wrap gap-2">
           {[
             { id: 'dashboard', label: 'Главная' },
@@ -1356,10 +1340,7 @@ export default function RepairPortal() {
                     <div className="flex items-center justify-between gap-2">
                       <div className="font-bold">{item.title}</div>
                       <Badge className={item.mode === 'ready' ? 'border-emerald-800/50 bg-emerald-950/30 text-emerald-300' : 'border-rose-800/50 bg-rose-950/30 text-rose-300'}>{item.description}</Badge>
-                    </div>
                   </button>
-                ))}
-              </div>
               <div className="mt-4 rounded-2xl bg-slate-950 p-4 text-sm leading-6 text-slate-300">
                 {selectedWizardCategory === 'phone-simple' ? 'Понятная модулька: можно считать только при наличии подтверждённой закупки.' : 'Сложная техника и сложные симптомы: только диагностика, без публичной цены.'}
                 {assistantMode === 'newbie' ? (
@@ -1369,7 +1350,6 @@ export default function RepairPortal() {
                 ) : null}
               </div>
             </Card>
-
             <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
               <Card>
                 <h2 className="text-2xl font-bold">Бысткий чек-лист приёмки</h2>
@@ -1380,7 +1360,6 @@ export default function RepairPortal() {
                     'Если симптом плавающий — сразу в диагностику.',
                     'Если устройство дорогое — акцент на качестве и рисках дешёвого решения.',
                   ].map((item) => <div key={item} className="rounded-2xl bg-slate-800 p-4 text-sm leading-6 text-slate-300">{item}</div>)}
-                </div>
               </Card>
               <Card>
                 <h2 className="text-2xl font-bold">Красные флаги при приёмке</h2>
@@ -1391,10 +1370,7 @@ export default function RepairPortal() {
                     'Плавающий дефект: то работает, то нет.',
                     'После предыдущего сервиса или уже вскрывалось.',
                   ].map((item) => <div key={item} className="rounded-2xl border border-rose-900/40 bg-rose-950/20 p-4">{item}</div>)}
-                </div>
               </Card>
-            </div>
-          </div>
         )}
 
         {activeTab === 'phones' && (
@@ -1411,7 +1387,6 @@ export default function RepairPortal() {
                   ))}
                 </div>
                 <ModelSearchInput initialValue={search} onSearch={setSearch} onClear={() => setSearch('')} />
-
                 {!selectedModel && (
                   <div className="mt-4">
                     <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-slate-500">
@@ -1512,9 +1487,7 @@ export default function RepairPortal() {
                 </div>
               </Card>
             </div>
-          </div>
         )}
-
         {activeTab === 'parts' && (
           <div className="space-y-6">
             <Card>
@@ -1764,8 +1737,6 @@ export default function RepairPortal() {
                     </tr>
                   ))}
                 </tbody>
-              </table>
-            </div>
           </Card>
         )}
 
@@ -1827,7 +1798,3 @@ export default function RepairPortal() {
             </Card>
           </div>
         )}
-      </div>
-    </div>
-  );
-}

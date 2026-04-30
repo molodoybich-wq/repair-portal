@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at 18% 0%, #12365a 0%, #061327 42%, #030914 100%);
+  color: #e2e8f0;
+}
+
+.rp-panel {
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  background: linear-gradient(145deg, rgba(9, 23, 40, 0.9), rgba(4, 13, 25, 0.92));
+  box-shadow: inset 0 1px 0 rgba(148, 224, 255, 0.12), 0 0 22px rgba(34, 211, 238, 0.1);
+  border-radius: 16px;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 18px rgba(34, 211, 238, 0.18);
+}
+
+.glow-violet {
+  box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.24), 0 0 18px rgba(168, 85, 247, 0.18);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at 20% 0%, #0f2f4d 0%, #040b1a 45%, #020611 100%);
+}
+
+.neon-panel {
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  background: linear-gradient(140deg, rgba(11, 27, 48, 0.92), rgba(5, 14, 26, 0.92));
+  box-shadow: inset 0 1px 0 rgba(148, 224, 255, 0.12), 0 0 20px rgba(34, 211, 238, 0.08);
+  border-radius: 16px;
+}
